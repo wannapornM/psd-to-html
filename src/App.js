@@ -1,3 +1,3 @@
 export default function App() {
-  return console.log("Hello from App.js");
+  return <div className="text-pink-500">Hello from App with Tailwind css</div>;
 }
