@@ -91,7 +91,7 @@ hr {
             display: flex;
             position: relative;
             width: 45%;
-
+            
             img {
                 width: 100%;
                 height: 100%;
@@ -133,7 +133,6 @@ hr {
                 letter-spacing: 4px;
                 color: #f25630;
             }
-
             &-heading {
                 font-size: 46px;
                 font-weight: 600;
@@ -141,11 +140,233 @@ hr {
                 letter-spacing: 3px;
                 padding: 1.5rem 0;
             }
-
             &-subheading {
                 color: #1b212f;
                 margin-bottom: 4rem;
             }
+        }
+    }
+
+    &-service {
+        padding: 5rem;
+        background: white;
+
+        &-context {
+            margin-bottom: 2rem;
+            text-align: center;
+
+            &-title {
+                font-weight: 500;
+                letter-spacing: 2px;
+                color: #f25630;
+            }
+            &-heading {
+                font-size: 44px;
+                font-weight: 600;
+            }
+        }
+
+        &-element {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+            gap: 2rem;
+            background: white;
+
+            &-box {
+                padding: 1.6rem 2rem;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 500;
+                border: 1px solid #d4d4d4;
+                border-radius: 12px;
+                background: white;
+
+                .icon-treatment {
+                    padding: 1.2rem 0;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    
+                    .inner-icon-treatment {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+                .icon-treatment:before {
+                    content: "";
+                    position: absolute;
+                    width: 48%;
+                    height: 100%;
+                    top: 0;
+                    left: 25%;
+                    opacity: 0.3;
+                    border-radius: 50%;
+                    background: #01A13C;
+                }
+
+                .icon-lady-haircut {
+                    padding: 1.2rem 0;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+
+                    .inner-icon-lady-haircut {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+                .icon-lady-haircut:before {
+                    content: "";
+                    position: absolute;
+                    width: 48%;
+                    height: 100%;
+                    top: 0;
+                    left: 25%;
+                    opacity: 0.3;
+                    border-radius: 50%;
+                    background: #ff6b4f;
+                }
+
+                .icon-men-haircut {
+                    padding: 1.2rem 0;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    
+                    .inner-icon-men-haircut {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+                .icon-men-haircut:before {
+                    content: "";
+                    position: absolute;
+                    width: 48%;
+                    height: 100%;
+                    top: 0;
+                    left: 25%;
+                    opacity: 0.3;
+                    border-radius: 50%;
+                    background: #df4c84;
+                }
+
+                .icon-kid-haircut {
+                    padding: 1.2rem 0;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    
+                    .inner-icon-kid-haircut {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+                .icon-kid-haircut:before {
+                    content: "";
+                    position: absolute;
+                    width: 48%;
+                    height: 100%;
+                    top: 0;
+                    left: 25%;
+                    opacity: 0.3;
+                    border-radius: 50%;
+                    background: #8361c8;
+                }
+
+                .icon-beard-trim {
+                    padding: 1.2rem 0;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    
+                    .inner-icon-beard-trim {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+                .icon-beard-trim:before {
+                    content: "";
+                    position: absolute;
+                    width: 48%;
+                    height: 100%;
+                    top: 0;
+                    left: 25%;
+                    opacity: 0.3;
+                    border-radius: 50%;
+                    background: #f0545f ;
+                }
+
+                .icon-hair-color {
+                    padding: 1.2rem 0;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    
+                    .inner-icon-hair-color {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+                .icon-hair-color:before {
+                    content: "";
+                    position: absolute;
+                    width: 48%;
+                    height: 100%;
+                    top: 0;
+                    left: 25%;
+                    opacity: 0.3;
+                    border-radius: 50%;
+                    background: #f7bd01;
+                }
+
+                .icon-curly-hair {
+                    padding: 1.2rem 0;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    
+                    .inner-icon-curly-hair {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+                .icon-curly-hair:before {
+                    content: "";
+                    position: absolute;
+                    width: 48%;
+                    height: 100%;
+                    top: 0;
+                    left: 25%;
+                    opacity: 0.3;
+                    border-radius: 50%;
+                    background: #2930e1;
+                }
+
+                .icon-hair-state {
+                    padding: 1.2rem 0;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    
+                    .inner-icon-hair-state {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+                .icon-hair-state:before {
+                    content: "";
+                    position: absolute;
+                    width: 48%;
+                    height: 100%;
+                    top: 0;
+                    left: 25%;
+                    opacity: 0.3;
+                    border-radius: 50%;
+                    background: #22c7a9;
+                }
+            }
+
         }
     }
 
