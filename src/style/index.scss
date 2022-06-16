@@ -152,7 +152,7 @@ header {
                 font-size: 46px;
                 font-weight: 600;
                 line-height: initial;
-                letter-spacing: 3px;
+                letter-spacing: 1.5px;
                 padding: 1.5rem 0;
             }
             &-subheading {
@@ -325,7 +325,6 @@ header {
                     border-radius: 12px 12px 0 0;
                 }
                 
-                
                 .block-content {
                     padding: 2.5rem 2rem;
                     
@@ -358,12 +357,13 @@ header {
         &-container {
             position: absolute;
             top: 37%;
-            left: 23.5%;
+            left: 23%;
             text-align: center;
             letter-spacing: 2px;
             &-text {
-                font-size: 46px;
+                font-size: 48px;
                 font-weight: 600;
+                line-height: initial;
                 color: white;
             }
             &-icon {
