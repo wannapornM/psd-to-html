@@ -377,70 +377,89 @@ header {
     }
 
     &-salon {
-        &-photocontainer {
-            .block1 {
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                gap: 2rem;
+        padding: 6rem 0 0.5rem 0;
 
-                .photo1 {
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 6px;
-                    background: pink;
-                }
-                .photo2 {
-                    width: 100px;
-                    height: 150px;
-                    border-radius: 6px;
-                    background: #8361c8; 
-                }
+        &-text {
+            text-align: center;
+        }
+
+        &-container {
+            width: 499px;
+            height: 500px;
+            position: relative;
+            margin: 20.5rem auto;
+            border-radius: 5px;
+            background: #BFC1F3;
+
+            .image1 {
+                width: 220px;
+                height: 220px;
+                position: absolute;
+                top: -50%;
+                right: 56%;
+                border-radius: 5px;
+                background: #C7E1C9;
             }
-            .block2 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 2rem;
-
-                .photo1 {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 2rem;
-                    &-first {
-                        width: 150px;
-                        height: 200px;
-                        border-radius: 6px;
-                        background: pink;
-                    }
-                    &-second {
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 6px;
-                        background: pink;
-                    }
-                }
-                .photo2 {
-                    width: 300px;
-                    height: 332px;
-                    border-radius: 6px;
-                    background: pink;
-                }
-                .photo3 {
-                    gap: 2rem;
-                    &-first {
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 6px;
-                        background: pink;
-                    }
-                    &-second {
-                        width: 150px;
-                        height: 200px;
-                        border-radius: 6px;
-                        background: pink;
-                    } 
-                }
+            .image2 {
+                width: 250px;
+                height: 250px;
+                position: absolute;
+                top: -56%;
+                right: 0;
+                border-radius: 5px;
+                background: #C7E1C9;
+            }
+            .image3 {
+                width: 250px;
+                height: 300px;
+                position: absolute;
+                left: -56%;
+                border-radius: 5px;
+                background: #C7E1C9;
+            }
+            .image4 {
+                width: 170px;
+                height: 172px;
+                position: absolute;
+                bottom: 0;
+                left: -40%;
+                border-radius: 5px;
+                background: #C7E1C9;
+            }
+            .image5 {
+                width: 170px;
+                height: 170px;
+                position: absolute;
+                right: -40%;
+                border-radius: 5px;
+                background: #C7E1C9;
+            }
+            .image6 {
+                width: 250px;
+                height: 300px;
+                position: absolute;
+                right: -56%;
+                bottom: 0;
+                border-radius: 5px;
+                background: #C7E1C9;
+            }
+            .image7 {
+                width: 250px;
+                height: 220px;
+                position: absolute;
+                right: 36%;
+                bottom: -50%;
+                border-radius: 5px;
+                background: #C7E1C9;
+            }
+            .image8 {
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                right: 0;
+                bottom: -36%;
+                border-radius: 5px;
+                background: #C7E1C9;
             }
         }
     }
