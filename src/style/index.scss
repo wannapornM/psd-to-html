@@ -489,6 +489,119 @@ header {
         }
     }
 
+    &-product {
+        &-text {
+            text-align: center;
+            margin: 1rem 0 3.2rem;
+
+            h1 {
+                padding: 1rem;
+            }
+        }
+
+        &-container {
+            position: relative;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+            padding: 0 6.5rem;
+            
+            img {
+                height: 363px;
+                object-fit: cover;
+                width: 100%;
+            }
+            .product1 {
+                background: #FAF3F2;
+            }
+            .product2 {
+                background: #FAF3F2;
+            }
+            .product3 {
+                background: #FAF3F2;
+            }
+            .product4 {
+                background: #FAF3F2;
+            }
+
+            .footer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 2rem;
+                
+                .rating {
+                    width: 63px;
+                    height: 12px;
+                }
+                .shopping-cart-btn {
+                    background: #f25630;
+                    padding: 10px 18px;
+                    border-radius: 25px;
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+        
+        .products-text {
+            text-align: center;
+            padding: 1.6rem 0;
+            
+            .title {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .price {
+                span:first-child {
+                    text-decoration-line: line-through;
+                }
+                span:last-child {
+                    text-decoration-line: underline;
+                }
+            }
+
+            
+        }
+        
+
+        .prev-btn {
+            background: white;
+            width: 50px;
+            border-radius: 50%;
+            height: 50px;
+            border: 2px solid orange;
+            color: orange;
+            position: absolute;
+            top: 40%;
+            left: 1.75%;
+        }
+        .next-btn {
+            background: white;
+            width: 50px;
+            border-radius: 50%;
+            height: 50px;
+            border: 2px solid orange;
+            color: orange;
+            position: absolute;
+            right: 1.75%;
+            bottom: 40%;
+        }
+
+        hr {
+            width: 100%;
+            border-top: 1px solid #f25630;
+            margin: 0;
+        }
+    }
+
     &-button {
         width: fit-content;
         background: #f25630;
