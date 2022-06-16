@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 48px;
     font-weight: 600;
     line-height: initial;
     letter-spacing: 2px;
@@ -460,6 +460,31 @@ header {
                 bottom: -36%;
                 border-radius: 5px;
                 background: #C7E1C9;
+            }
+        }
+    }
+
+    &-team {
+        padding: 2rem 0;
+        
+        &-text {
+            text-align: center;
+            padding: 1rem 0;
+            h1 {
+                padding: 1rem 0;
+            }
+        }
+
+        &-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+            padding: 2.5rem 1.5rem;
+
+            .team-image img {
+                width: 100%;
+                height: 418px;
+                object-fit: cover;
             }
         }
     }
