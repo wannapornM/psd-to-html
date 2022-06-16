@@ -437,8 +437,34 @@ header {
     }
 
     &-video {
-        &-bg img {
-            min-width: 100%;
+        position: relative;
+
+        &-bg {
+            background: black;
+            img {
+                min-width: 100%;
+                opacity: 0.6;
+            }
+        }
+
+        &-container {
+            position: absolute;
+            top: 37%;
+            left: 23.5%;
+            text-align: center;
+            letter-spacing: 2px;
+            &-text {
+                font-size: 46px;
+                font-weight: 600;
+                color: white;
+            }
+            &-icon {
+                width: 100px;
+                height: 100px;
+                margin: 2rem auto;
+                background: white;
+                border-radius: 50%;
+            }
         }
     }
 
