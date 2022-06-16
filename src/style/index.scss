@@ -436,6 +436,12 @@ header {
         }
     }
 
+    &-video {
+        &-bg img {
+            min-width: 100%;
+        }
+    }
+
     &-button {
         width: fit-content;
         background: #f25630;
