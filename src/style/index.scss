@@ -296,6 +296,7 @@ header {
             margin: 2rem 0 3rem 0;
             
             .block {
+                position: relative;
                 flex-basis: 30%;
                 border-radius: 12px;
                 overflow: hidden;
@@ -338,6 +339,32 @@ header {
                         color: #212529;
                         opacity: 0.8; 
                     }
+                }
+
+                .circle-price {
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 39%;
+                    right: 8%;
+                    border-radius: 50%;
+                    background: #E16137;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: white;
+
+                }
+                .circle-border {
+                    width: 90px;
+                    height: 90px;
+                    position: absolute;
+                    top: 40%;
+                    right: 9.2%;
+                    border-radius: 50%;
+                    border: 1px dashed white;    
                 }
             }
         }
