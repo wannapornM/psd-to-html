@@ -386,6 +386,9 @@ header {
     }
 
     &-pricing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 6rem;
         background: #fbf3f2;
 
@@ -402,7 +405,7 @@ header {
             flex-wrap: wrap;
             justify-content: space-around;
             gap: 2rem;
-            margin-top: 2rem;
+            margin: 2rem 0 3rem 0;
 
             .block {
                 flex-basis: 30%;
