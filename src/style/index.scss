@@ -11,13 +11,14 @@ h1 {
     font-weight: 600;
     line-height: initial;
     letter-spacing: 2px;
-    color: black;
+    color: #010101;
 }
 
 h3 {
     font-size: 20px;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
     color: #f25630;
 }
 
@@ -228,18 +229,13 @@ header {
     }
 
     &-service {
-        padding: 5rem;
+        padding: 7rem 4rem;
         background: white;
 
         &-context {
             margin-bottom: 2rem;
             text-align: center;
 
-            &-title {
-                font-weight: 500;
-                letter-spacing: 2px;
-                color: #f25630;
-            }
             &-heading {
                 font-size: 44px;
                 font-weight: 600;
@@ -258,9 +254,10 @@ header {
                 text-align: center;
                 font-size: 24px;
                 font-weight: 500;
-                border: 1px solid #d4d4d4;
+                border: 1px solid #EEEEEE;
                 border-radius: 12px;
                 background: white;
+                // animation-name: fadeInUp;
 
                 .icon-treatment {
                     width: 100px;
@@ -269,6 +266,11 @@ header {
                     padding: 1.5rem;
                     border-radius: 50%;
                     background: #C7E1C9;
+                    transition: 2s;
+                }
+                .icon-treatment:hover {
+                    background: #01A13C;
+                    transform: rotate(180deg);
                 }
 
                 .icon-lady-haircut {
@@ -333,6 +335,19 @@ header {
                     border-radius: 50%;
                     background: #CEEDE6;
                 }
+                padding: 1.6rem 2rem;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 500;
+                border: 1px solid #EEEEEE;
+                border-radius: 12px;
+                background: white;
+                animation-name: fadeInUp;
+            }
+
+            &-box:hover {
+                border: none;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             }
 
         }
@@ -458,12 +473,57 @@ header {
                 line-height: initial;
                 color: white;
             }
+
             &-icon {
                 width: 100px;
                 height: 100px;
                 margin: 2rem auto;
                 background: white;
                 border-radius: 50%;
+                position: relative;
+                // transform: translate(-50%, -50%);
+                // transition: 0.3s;
+            }
+            
+            .loader-animation-one {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                animation: circleloader1 2s infinite;
+                // animation: one 2s infinite;
+                animation-delay: 0s;
+                animation-timing-function: ease-in-out;
+                background: white;
+            }
+            .loader-animation-two {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                animation: circleloader2 2s infinite;
+                // animation: one 2s infinite;
+                animation-delay: 0s;
+                animation-timing-function: ease-in-out;
+                background: white;
+            }
+            &-icon:hover {
+                background: #db8d83;
+            }
+            @keyframes circleloader1 {
+                0% { width: 100px; height: 100px; opacity: 1; }
+                100% { width: 200px; height: 200px; opacity: 0; }
+            }
+            @keyframes two {
+                0% { width: 100px; height: 100px; opacity: 1; }
+                50% { width: 150px; height: 150px; opacity: 1; }
+                100% { width: 200px; height: 200px; opacity: 0; }
             }
         }
     }
