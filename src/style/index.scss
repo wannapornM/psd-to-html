@@ -148,6 +148,7 @@ header {
         flex-wrap: wrap;
         background: white;
         margin: 7.5rem 4.3rem 3rem 4.3rem;
+        position: relative;
 
         &-img {
             display: flex;
@@ -206,6 +207,17 @@ header {
                 color: #1b212f;
                 margin-bottom: 3rem;
             }
+        }
+
+        .img-pattern {
+            position: absolute;
+            bottom: 5%;
+            right: -5%;
+            animation: rotation 15s infinite linear;
+        }
+        @keyframes rotation {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(359deg); }
         }
 
         .about-btn:hover {
