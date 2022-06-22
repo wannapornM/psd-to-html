@@ -11,83 +11,90 @@
   <body>
     <div id="app"></div>
 
-    <div class="head-contact">
-      <div class="head-contact-promotion"></div>
+    <!-- Header -->
+    <div class="head-top">
+      <div class="head-top-promotion">
         Get 25% Off by any Product your Purchase
       </div>
-      <div class="head-contact-elements">
+      <div class="head-top-socials">
         <ul>
-          <li class="head-contact-item">
+          <li class="social-link">
             <a href="">
-              <img
-                src="../assets/facebook.png"
-                alt="Facebook contact"
-                loading="lazy"
-              />
+              <img src="../assets/facebook.png" alt="Facebook" loading="lazy" />
             </a>
           </li>
-          <li class="head-contact-item">
+          <li class="social-link">
             <a href="">
               <img
                 src="../assets/instagram.png"
-                alt="Instagram contact"
+                alt="Instagram"
                 loading="lazy"
               />
             </a>
           </li>
-          <li class="head-contact-item">
+          <li class="social-link">
             <a href="">
-              <img
-                src="../assets/linkedin.png"
-                alt="Linkin contact"
-                loading="lazy"
-              />
+              <img src="../assets/linkedin.png" alt="Linkin" loading="lazy" />
             </a>
           </li>
-          <li class="head-contact-item">
+          <li class="social-link">
             <a href="">
-              <img
-                src="../assets/twitter.png"
-                alt="Twitter contact"
-                loading="lazy"
-              />
+              <img src="../assets/twitter.png" alt="Twitter" loading="lazy" />
             </a>
           </li>
-          <li class="head-contact-item">
+          <li class="social-link">
             <a href="">
-              <img
-                src="../assets/youtube.png"
-                alt="Youtube contact"
-                loading="lazy"
-              />
+              <img src="../assets/youtube.png" alt="Youtube" loading="lazy" />
             </a>
           </li>
         </ul>
       </div>
     </div>
 
-    
-      <div class="head-menu">
-        <span class="head-menu-name">
-          <a href="">
-            <img src="../assets/logohairly.png" alt="" laoding="lazy" />
-            Hairly.
-          </a>
-        </span>
-        <span class="head-menu-elements">
+    <div class="head-main">
+      <div class="head-main-logobox">
+        <a href="">
+          <img
+            src="../assets/logohairly.png"
+            alt="Hairly logo"
+            laoding="lazy"
+          />
+          Hairly.
+        </a>
+      </div>
+
+      <div class="head-main-link">
+        <div class="head-main-link-menu">
           <ul>
-            <li class="head-menu-item"><a href="" class="active">Home</a></li>
-            <li class="head-menu-item"><a href="">About Us</a></li>
-            <li class="head-menu-item"><a href="">Services</a></li>
-            <li class="head-menu-item"><a href="">Blog</a></li>
-            <li class="head-menu-item"><a href="">Shop</a></li>
-            <li class="head-menu-item"><a href="">Contact</a></li>
-            <li class="head-menu-item">
+            <li class="link-menu">
+              <a href="" id="active" title="Home">Home</a>
+            </li>
+            <li class="link-menu">
+              <a href="" class="menu" title="About us">About Us</a>
+            </li>
+            <li class="link-menu">
+              <a href="" class="menu" title="Services">Services</a>
+            </li>
+            <li class="link-menu">
+              <a href="" class="menu" title="Blog">Blog</a>
+            </li>
+            <li class="link-menu">
+              <a href="" class="menu" title="Shop">Shop</a>
+            </li>
+            <li class="link-menu">
+              <a href="" class="menu" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="head-main-link-other">
+          <ul>
+            <li class="link-other">
               <a href="">
                 <img src="../assets/user.png" alt="User icon" loading="lazy" />
               </a>
             </li>
-            <li class="head-menu-item">
+            <li class="link-other">
               <a href="">
                 <img
                   src="../assets/search.png"
@@ -96,7 +103,7 @@
                 />
               </a>
             </li>
-            <li class="head-menu-item">
+            <li class="link-other">
               <a href="">
                 <img
                   src="../assets/shopping-cart.png"
@@ -106,9 +113,11 @@
               </a>
             </li>
           </ul>
-        </span>
+        </div>
       </div>
-    
+    </div>
+    <!-- Header -->
+
     <!-- Home section -->
     <div class="slideitem-home">
       <div class="slideitem-home-context">
@@ -231,11 +240,7 @@
 
         <div class="slideitem-service-element-box">
           <div class="icon-hair-color">
-            <img
-              src="../assets/hair-dye.png"
-              alt="Hair Color"
-              loading="lazy"
-            />
+            <img src="../assets/hair-dye.png" alt="Hair Color" loading="lazy" />
           </div>
           <div>Hair Color</div>
         </div>
@@ -305,8 +310,8 @@
           <div class="block-content">
             <div class="block-text-title">Hair Style</div>
             <div class="block-text-body">
-              Aliquam erat volutpat. Integer ut urna ac dolor efficitur
-              euismod vitae dictum augue tempor.
+              Aliquam erat volutpat. Integer ut urna ac dolor efficitur euismod
+              vitae dictum augue tempor.
             </div>
             <button class="pricebox-btn">Book Now</button>
           </div>
@@ -330,7 +335,7 @@
         </div>
         <div class="loader-animation-one"></div>
         <div class="loader-animation-two"></div>
-        <!-- <div class="loader-animation"></div> -->
+        <div class="loader-animation-three"></div>
         <div class="slideitem-video-container-icon"></div>
       </div>
     </div>
@@ -346,14 +351,30 @@
       </div>
 
       <div class="slideitem-salon-container">
-        <div class="image1"></div>
-        <div class="image2"></div>
-        <div class="image3"></div>
-        <div class="image4"></div>
-        <div class="image5"></div>
-        <div class="image6"></div>
-        <div class="image7"></div>
-        <div class="image8"></div>
+        <div class="image1">
+          <div class="salon-rectangle"><div class="subrectangle"></div></div>
+        </div>
+        <div class="image2">
+          <div class="salon-rectangle"><div class="subrectangle"></div></div>
+        </div>
+        <div class="image3">
+          <div class="salon-rectangle"><div class="subrectangle"></div></div>
+        </div>
+        <div class="image4">
+          <div class="salon-rectangle"><div class="subrectangle"></div></div>
+        </div>
+        <div class="image5">
+          <div class="salon-rectangle"><div class="subrectangle"></div></div>
+        </div>
+        <div class="image6">
+          <div class="salon-rectangle"><div class="subrectangle"></div></div>
+        </div>
+        <div class="image7">
+          <div class="salon-rectangle"><div class="subrectangle"></div></div>
+        </div>
+        <div class="image8">
+          <div class="salon-rectangle"><div class="subrectangle"></div></div>
+        </div>
       </div>
     </div>
 
@@ -531,12 +552,7 @@
             asperiores earum odit facere harum praesentium. Voluptate
             repudiandae velit harum id fuga ...
           </p>
-          <img
-            src="../assets/rating.png"
-            alt=""
-            loading="lazy"
-            class="rate"
-          />
+          <img src="../assets/rating.png" alt="" loading="lazy" class="rate" />
           <div class="testimonials-info">
             <div class="testimonials-name">Jack Daniel</div>
             <div class="testimonials-designation">
