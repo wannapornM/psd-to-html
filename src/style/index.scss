@@ -1049,6 +1049,12 @@ button {
         .img-testimonials {
             width: 500px;
             height: 500px;
+            animation: zoominzoomout-tes-img 2s infinite ease-in-out;
+        }
+        @keyframes zoominzoomout-tes-img {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.07); }
+            100% { transform: scale(1); }
         }
 
         .testimonials-content {
