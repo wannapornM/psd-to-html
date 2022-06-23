@@ -955,12 +955,16 @@ button {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem;
         padding: 2.5rem 1.5rem;
-
-        .team-image img {
+        
+        .team-image {
+            position: relative;
+            overflow: hidden;
             // position: absolute;
-            width: 100%;
-            height: 418px;
-            object-fit: cover;
+            img {
+                width: 100%;
+                height: 418px;
+                object-fit: cover;
+            }
         }
 
         // #hover-info {
@@ -976,6 +980,28 @@ button {
         // .team-image:hover > #hover-info {
         //     height: 200px;
         // }
+
+        .team-image:before {
+            content: "";
+            width: 10%;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: -38%;
+            background: white;
+            opacity: 0.3;
+            filter: blur(5px);
+            transform: skewX(-25deg);
+            transition: all 0.2s ease;
+        }
+        .team-image:hover::before {
+            animation: shine 1s;
+        }
+        @keyframes shine {
+            0% { left: -30% }
+            100% { left: 125% }
+        }
     }
 }
 
