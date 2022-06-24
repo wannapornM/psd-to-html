@@ -49,6 +49,10 @@ button {
     transition: 0.5s;
 }
 
+.main-app {
+    overflow-x: hidden;
+}
+
 .head-top {
     display: flex;
     justify-content: space-between;
@@ -986,22 +990,22 @@ button {
         }
 
         #member1 {
-            background-image: url("../../assets/wall.jpg");
+            background-image: url("../../assets/girl1.jpeg");
             background-repeat: no-repeat;
             background-size: cover;
         }
         #member2 {
-            background-image: url("../../assets/wall.jpg");
+            background-image: url("../../assets/girl2.jpeg");
             background-repeat: no-repeat;
             background-size: cover;
         }
         #member3 {
-            background-image: url("../../assets/wall.jpg");
+            background-image: url("../../assets/girl3.jpeg");
             background-repeat: no-repeat;
             background-size: cover;
         }
         #member4 {
-            background-image: url("../../assets/wall.jpg");
+            background-image: url("../../assets/girl4.jpeg");
             background-repeat: no-repeat;
             background-size: cover;
         }
