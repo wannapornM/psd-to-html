@@ -1,0 +1,38 @@
+.slideitem-home {
+  background: black;
+  padding: 4rem 1rem;
+
+  &-context {
+    width: 70%;
+    display: block;
+    color: white;
+    margin-bottom: 2.5rem;
+
+    &-heading {
+      font-size: 40px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      line-height: initial;
+    }
+    &-subheading {
+      font-size: 20px;
+      font-weight: 300;
+      padding-top: 1.6rem;
+    }
+  }
+
+  .home-btn:hover {
+    color: #f25630;
+    border: 2px solid #f25630;
+    background: transparent;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    padding: 19rem 8rem;
+
+    &-heading {
+      font-size: 72px;
+      letter-spacing: 4px;
+    }
+  }
+}
