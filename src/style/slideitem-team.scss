@@ -1,0 +1,141 @@
+.slideitem-team {
+  padding: 4rem 1rem;
+
+  &-text {
+    text-align: center;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+    gap: 2rem;
+
+    .team-image {
+      position: relative;
+      display: flex;
+      align-items: end;
+      overflow: hidden;
+      height: 300px;
+
+      li.teamlist {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: transparent;
+        border-radius: 50%;
+        margin: 0 4px;
+      }
+
+      a#name {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+      }
+
+      .designation {
+        font-size: 12px;
+        margin: 0;
+        color: white;
+      }
+    }
+
+    #member1 {
+      background-image: url("../../assets/girl1.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #member2 {
+      background-image: url("../../assets/girl2.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #member3 {
+      background-image: url("../../assets/girl3.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #member4 {
+      background-image: url("../../assets/girl4.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .team-image:before {
+      content: "";
+      width: 10%;
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: -38%;
+      background: white;
+      opacity: 0.3;
+      filter: blur(5px);
+      transform: skewX(-25deg);
+      transition: all 0.2s ease;
+    }
+    .team-image:hover::before {
+      animation: shine 1s;
+    }
+    @keyframes shine {
+      0% {
+        left: -30%;
+      }
+      100% {
+        left: 125%;
+      }
+    }
+
+    .hover-info {
+      width: 100%;
+      text-align: center;
+      padding: 8px 0;
+      background: #db8d83;
+      transform: translateY(100%);
+      transition: transform 0.4s ease-in-out;
+    }
+    .team-image:hover > .hover-info {
+      transform: translateY(0);
+    }
+  }
+
+
+  @media only screen and (min-width: 1080px) {
+    padding: 2rem 0;
+
+    &-text {
+      padding: 1rem 0;
+
+      h1 {
+        padding: 1rem 0;
+      }
+    }
+
+    &-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 2.5rem 1.5rem;
+
+      .team-image {
+        height: 416px;
+
+        .hover-info {
+          padding: 20px 0;
+          
+          a#name {
+            font-size: 24px;
+          }
+          
+          li.teamlist {
+            width: 18px;
+            height: 18px;
+          }
+          
+          .destination {
+            font-size: 16px;
+            margin: 4px 0 10px;
+          }
+        }
+      }
+    } 
+  }
+}
