@@ -8,16 +8,14 @@
     color: white;
     margin-bottom: 2.5rem;
 
-    &-heading {
-      font-size: 40px;
-      letter-spacing: 2px;
-      font-weight: 600;
-      line-height: initial;
+    h1 {
+      color: white;
     }
-    &-subheading {
-      font-size: 20px;
+
+    p {
       font-weight: 300;
       padding-top: 1.6rem;
+      color: white;
     }
   }
 
@@ -27,10 +25,10 @@
     background: transparent;
   }
 
-  @media only screen and (min-width: 1080px) {
+  @media only screen and (min-width: 1024px) {
     padding: 19rem 8rem;
 
-    &-heading {
+    h1 {
       font-size: 72px;
       letter-spacing: 4px;
     }

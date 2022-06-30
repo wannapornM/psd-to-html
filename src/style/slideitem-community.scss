@@ -36,25 +36,22 @@
 
     .community-btn {
       position: static;
+      padding: 0.65rem 1.4rem;
       font-size: 14px;
       color: white;
       background: #f25630;
       font-weight: 600;
       border-radius: 30px;
-      padding: 1.2rem 2.5rem;
       border: 0;
-      top: 6.5%;
-      right: 25.35%;
     }
     .community-btn:hover {
       background: #1b212f;
     }
   }
 
-
   @media only screen and (min-width: 1080px) {
     padding: 7rem 0;
-    
+
     &-text {
       h1 {
         padding: 1rem 0;
@@ -72,6 +69,9 @@
 
       button.community-btn {
         position: absolute;
+        padding: 1.2rem 2.5rem;
+        top: 6.5%;
+        right: 25.35%;
       }
     }
   }

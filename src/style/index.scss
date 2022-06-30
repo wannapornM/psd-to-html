@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./head-top.scss";
+@import "./head-main.scss";
+@import "./slideitem-home.scss";
+@import "./slideitem-aboutus.scss";
+@import "./slideitem-service.scss";
+@import "./slideitem-pricing.scss";
+@import "./slideitem-video.scss";
+@import "./slideitem-salon.scss";
+@import "./slideitem-team.scss";
+@import "./slideitem-product";
+@import "./slideitem-testimonials.scss";
+@import "./slideitem-community.scss";
+@import "./slideitem-footer.scss";
+
+
 body {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h1 {
@@ -14,12 +29,17 @@ h1 {
   color: #010101;
 }
 
-h3 {
-  font-size: 20px;
+h2 {
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 2px;
   margin-bottom: 15px;
   color: #f25630;
+}
+
+p {
+  font-size: 16px;
+  color: #1b212f;
 }
 
 ul {
@@ -41,11 +61,11 @@ hr {
 button {
   background: #f25630;
   color: white;
-  padding: 12px 36px;
   border-radius: 25px;
   border: 2px solid #f25630;
   font-weight: 600;
-  font-size: 14px;
+  padding: 10px 22px;
+  font-size: 12px;
   transition: 0.5s;
 }
 
@@ -53,16 +73,29 @@ button {
   overflow-x: hidden;
 }
 
-@import "./head-top.scss";
-@import "./head-main.scss";
-@import "./slideitem-home.scss";
-@import "./slideitem-aboutus.scss";
-@import "./slideitem-service.scss";
-@import "./slideitem-pricing.scss";
-@import "./slideitem-video.scss";
-@import "./slideitem-salon.scss";
-@import "./slideitem-team.scss";
-@import "./slideitem-product";
-@import "./slideitem-testimonials.scss";
-@import "./slideitem-community.scss";
-@import "./slideitem-footer.scss";
+
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: initial;
+    letter-spacing: 1.5px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 12px 36px;
+    font-size: 14px;
+  }
+}

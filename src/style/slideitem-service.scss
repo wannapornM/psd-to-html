@@ -20,9 +20,8 @@
     background: white;
 
     &-box {
-      padding: 1rem;
+      padding: 0.8rem 0.6rem;
       text-align: center;
-      font-size: 20px;
       font-weight: 500;
       border: 1px solid #eeeeee;
       border-radius: 12px;
@@ -30,80 +29,48 @@
       line-height: 1.25;
       animation-name: fadeInUp;
 
-      .icon-treatment {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 1.5rem;
+      .icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1rem;
         padding: 1.5rem;
         border-radius: 50%;
+      }
+
+      #icon-treatment {
         background: #c7e1c9;
         transition: 2s;
       }
-      .icon-treatment:hover {
+      #icon-treatment:hover {
         background: #01a13c;
         transform: rotate(180deg);
       }
 
-      .icon-lady-haircut {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 1.5rem;
-        padding: 1.5rem;
-        border-radius: 50%;
+      #icon-lady-haircut {
         background: #fad6cd;
       }
 
-      .icon-men-haircut {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 1.5rem;
-        padding: 1.5rem;
-        border-radius: 50%;
+      #icon-men-haircut {
         background: #f1cdda;
       }
 
-      .icon-kid-haircut {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 1.5rem;
-        padding: 1.5rem;
-        border-radius: 50%;
+      #icon-kid-haircut {
         background: #d8d0ed;
       }
 
-      .icon-beard-trim {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 1.5rem;
-        padding: 1.5rem;
-        border-radius: 50%;
+      #icon-beard-trim {
         background: #f6cfd1;
       }
 
-      .icon-hair-color {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 1.5rem;
-        padding: 1.5rem;
-        border-radius: 50%;
+      #icon-hair-color {
         background: #fbecc6;
       }
 
-      .icon-curly-hair {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 1.5rem;
-        padding: 1.5rem;
-        border-radius: 50%;
+      #icon-curly-hair {
         background: #bfc1f3;
       }
 
-      .icon-hair-state {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 1.5rem;
-        padding: 1.5rem;
-        border-radius: 50%;
+      #icon-hair-state {
         background: #ceede6;
       }
     }
@@ -124,6 +91,12 @@
       &-box {
         padding: 1.6rem 2rem;
         font-size: 24px;
+
+        .icon {
+          width: 100px;
+          height: 100px;
+          margin: 0 auto 1.5rem;
+        }
       }
     }
   }
