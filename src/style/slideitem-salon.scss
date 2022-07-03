@@ -1,21 +1,18 @@
 .slideitem-salon {
-  padding: 4rem 1rem;
-
   &-text {
     text-align: center;
   }
 
   &-container {
     max-width: 970px;
-    margin: 6rem auto 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
     gap: 2rem;
   }
 
   .blocks1 {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
     align-items: flex-end;
@@ -271,7 +268,14 @@
   //   }
   // }
 
-  @media only screen and (min-width: 1080px) {
+  @media only screen and (min-width: 1024px) {
     padding: 6rem 0 0.5rem 0;
+
+    &-container {
+      margin: 6rem auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

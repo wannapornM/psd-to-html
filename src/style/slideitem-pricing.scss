@@ -1,7 +1,6 @@
 .slideitem-pricing {
   display: flex;
   flex-wrap: wrap;
-  padding: 4rem 1rem;
   justify-content: center;
   background: #fbf3f2;
   position: relative;
@@ -11,11 +10,12 @@
     text-align: center;
 
     h1 {
-      padding: 1rem 0;
+      width: 95%;
+      margin: 0 auto;
     }
   }
 
-  &-block {
+  &-blocks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     justify-content: space-between;
@@ -29,21 +29,22 @@
       overflow: hidden;
       background: white;
 
-      .block-img-haircut {
+      .block-img {
         height: 265px;
         border-radius: 12px 12px 0 0;
         overflow: hidden;
         position: relative;
 
-        img#haircut {
+        img {
+          width: 100%;
           transform: scale(1.15);
           transition: all 0.3s ease-in-out;
         }
-        img#haircut:hover {
+        img:hover {
           transform: scale(1);
         }
       }
-      .block-img-haircut:before {
+      .block-img:before {
         content: "";
         width: 10%;
         height: 100%;
@@ -57,7 +58,7 @@
         transform: skewX(-25deg);
         transition: all 0.5s ease;
       }
-      .block-img-haircut:hover::before {
+      .block-img:hover::before {
         animation: shine 1s;
       }
       @keyframes shine {
@@ -69,94 +70,14 @@
         }
       }
 
-      .block-img-coloring {
-        height: 265px;
-        border-radius: 12px 12px 0 0;
-        overflow: hidden;
-        position: relative;
-
-        img#coloring {
-          transform: scale(1.15);
-          transition: all 0.3s ease-in-out;
-        }
-        img#coloring:hover {
-          transform: scale(1);
-        }
-      }
-      .block-img-coloring:before {
-        content: "";
-        width: 10%;
-        height: 100%;
-        z-index: 2;
-        position: absolute;
-        top: 0;
-        left: -30%;
-        background: white;
-        opacity: 0.3;
-        filter: blur(5px);
-        transform: skewX(-25deg);
-        transition: all 0.5s ease;
-      }
-      .block-img-coloring:hover::before {
-        animation: shine 1s;
-      }
-      @keyframes shine {
-        0% {
-          left: -30%;
-        }
-        100% {
-          left: 125%;
-        }
-      }
-
-      .block-img-hairstyle {
-        height: 265px;
-        border-radius: 12px 12px 0 0;
-        overflow: hidden;
-        position: relative;
-
-        img#hairstyle {
-          transform: scale(1.15);
-          transition: all 0.3s ease-in-out;
-        }
-        img#hairstyle:hover {
-          transform: scale(1);
-        }
-      }
-      .block-img-hairstyle:before {
-        content: "";
-        width: 10%;
-        height: 100%;
-        z-index: 2;
-        position: absolute;
-        top: 0;
-        left: -30%;
-        background: white;
-        opacity: 0.3;
-        filter: blur(5px);
-        transform: skewX(-25deg);
-        transition: all 0.5s ease;
-      }
-      .block-img-hairstyle:hover::before {
-        animation: shine 1s;
-      }
-      @keyframes shine {
-        0% {
-          left: -30%;
-        }
-        100% {
-          left: 125%;
-        }
-      }
-
-      .block-content {
+      .block-info {
         padding: 1.5rem;
 
-        .block-text-title {
+        .title {
           font-size: 24px;
           font-weight: 500;
         }
-        .block-text-body {
+        .description {
           padding: 4px 0 19px;
           color: #212529;
           opacity: 0.8;
@@ -205,6 +126,7 @@
     top: 44px;
     left: 32px;
     z-index: -1;
+    visibility: hidden;
     animation: zoominzoomout-bg1 5s infinite;
   }
   @keyframes zoominzoomout-bg1 {
@@ -220,11 +142,12 @@
   }
 
   img#bg-pricing2 {
-    max-height: 170px;
     position: absolute;
+    max-height: 170px;
     right: 18px;
     top: 88px;
     z-index: -1;
+    visibility: hidden;
     animation: changeposition-bg2 5s infinite;
   }
   @keyframes changeposition-bg2 {
@@ -245,6 +168,7 @@
     bottom: 144px;
     max-height: 170px;
     z-index: -1;
+    visibility: hidden;
     animation: changeposition-bg3 5s infinite;
   }
   @keyframes changeposition-bg3 {
@@ -264,6 +188,7 @@
     right: 24px;
     bottom: 112px;
     z-index: -1;
+    visibility: hidden;
     animation: changeposition-bg4 5s infinite;
   }
   @keyframes changeposition-bg4 {
@@ -277,45 +202,104 @@
       bottom: 112px;
     }
   }
+
   button.pricebox-btn {
     font-size: 13px;
     padding: 8px 18px;
   }
-  .pricebox-btn:hover {
+  button.pricebox-btn:hover {
     opacity: 0.7;
   }
 
-  .pricing-btn {
+  button.pricing-btn {
     width: fit-content;
     background: white;
     color: #f25630;
     padding: 15px 40px;
     border-radius: 25px;
+    border: 2px solid white;
     font-weight: 600;
     font-size: 14px;
     transition: 0.8s;
   }
-  .pricing-btn:hover {
+  button.pricing-btn:hover {
     background: #f25630;
     color: white;
+    border: 2px solid #f25630;
+  }
+
+  @media only screen and (min-width: 709px) {
+    &-text {
+      width: 100%;
+      margin-bottom: 2rem;
+
+      h1 {
+        max-width: 430px;
+      }
+    }
+
+    &-blocks {
+      margin-top: 0;
+      grid-template-columns: repeat(auto-fit, minmax(613px, 1fr));
+
+      .block {
+        .block-img {
+          height: 445px;
+
+          img {
+            transform: translateY(-20%);
+          }
+        }
+        .block-img:before {
+          left: -26%;
+        }
+
+        .block-info {
+          padding: 3rem;
+
+          .title {
+            margin-bottom: 8px;
+          }
+
+          .description {
+            padding: 0;
+            margin-bottom: 24px;
+          }
+        }
+
+        .circle-price {
+          top: 57%;
+        }
+
+        .circle-border {
+          top: 57.75%;
+          right: 6.75%;
+        }
+      }
+    }
   }
 
   @media only screen and (min-width: 1024px) {
     padding: 6rem 7.8rem;
 
-    &-block {
+    &-blocks {
       display: flex;
       flex-wrap: wrap;
 
       .block {
-        .block-content {
+        .block-img {
+          img {
+            transform: translateY(0);
+          }
+        }
+        .block-info {
           padding: 2.5rem 2rem;
 
-          .block-text-title {
+          .title {
             letter-spacing: 2px;
           }
 
-          .block-text-body {
+          .description {
             padding: 0.8rem 0 2rem 0;
           }
         }
@@ -333,6 +317,13 @@
           top: 40%;
           right: 9.2%;
         }
+      }
+
+      img#bg-pricing1,
+      img#bg-pricing2,
+      img#bg-pricing3,
+      img#bg-pricing4 {
+        visibility: visible;
       }
     }
   }

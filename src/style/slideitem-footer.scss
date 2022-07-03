@@ -1,7 +1,6 @@
 .slideitem-footer {
   background: white;
   text-align: center;
-  padding: 4rem 1rem;
 
   &-title {
     font-size: 40px;
@@ -13,6 +12,7 @@
       img {
         width: 50px;
         height: 50px;
+        align-self: center;
       }
     }
   }
@@ -20,7 +20,7 @@
   &-menulists {
     padding: 1rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 6px;
 
     li.menu-item {
@@ -34,9 +34,8 @@
   }
 
   &-logolists {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-    justify-items: center;
+    display: inline-flex;
+    gap: 1rem;
 
     li.footer-link-contact {
       width: 40px;
@@ -44,7 +43,7 @@
       display: inline-block;
       border-radius: 50%;
       transition: 0.3s;
-      
+
       img {
         width: 100%;
         height: 100%;
@@ -54,12 +53,22 @@
     li.footer-link-contact:hover {
       opacity: 0.7;
     }
-    
-    li#logo-list-facebook { background: #6f42c1; }
-    li#logo-list-instagram { background: #dc3545; }
-    li#logo-list-linkin { background: #0077b5; }
-    li#logo-list-twitter { background: #009cff; }
-    li#logo-list-youtube { background: #ff0000; }
+
+    li#logo-list-facebook {
+      background: #6f42c1;
+    }
+    li#logo-list-instagram {
+      background: #dc3545;
+    }
+    li#logo-list-linkin {
+      background: #0077b5;
+    }
+    li#logo-list-twitter {
+      background: #009cff;
+    }
+    li#logo-list-youtube {
+      background: #ff0000;
+    }
   }
 
   p {
@@ -68,8 +77,25 @@
     margin-top: 2.8rem;
   }
 
+  @media only screen and (min-width: 709px) {
+    &-menulists {
+      display: inline-flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 1rem 0 2rem;
+    }
 
-  @media only screen and (min-width: 1080px) {
+    &-logolists {
+      display: inline-flex;
+      gap: 1rem;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
     padding: 6rem 0 3rem;
 
     &-menulists {

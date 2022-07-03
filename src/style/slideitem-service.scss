@@ -1,8 +1,7 @@
 .slideitem-service {
-  padding: 4rem 1rem;
   background: white;
 
-  &-context {
+  &-text {
     margin-bottom: 2rem;
     text-align: center;
 
@@ -13,9 +12,9 @@
     }
   }
 
-  &-element {
+  &-elements {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
     background: white;
 
@@ -81,10 +80,25 @@
     }
   }
 
-  @media only screen and (min-width: 1080px) {
+  @media only screen and (min-width: 709px) {
+    &-text {
+      h1 {
+        max-width: 465px;
+        margin: 0 auto;
+      }
+    }
+
+    &-elements {
+      &-box {
+        padding: 1.6rem 1rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
     padding: 7rem 4rem;
 
-    &-element {
+    &-elements {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr 1fr;
 

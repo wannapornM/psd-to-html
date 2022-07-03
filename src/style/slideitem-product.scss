@@ -1,9 +1,12 @@
 .slideitem-product {
-  padding: 4rem 1rem;
-
   &-text {
     text-align: center;
-    margin: 1rem 0 3.2rem;
+    margin-bottom: 3rem;
+
+    h1 {
+      width: 85%;
+      margin: 0 auto;
+    }
   }
 
   &-container {
@@ -127,8 +130,10 @@
     color: white;
   }
 
+  @media only screen and (min-width: 709px) {
+  }
 
-  @media only screen and (min-width: 1080px) {
+  @media only screen and (min-width: 1024px) {
     &-text {
       h1 {
         padding: 1rem;
@@ -151,7 +156,8 @@
         }
       }
 
-      button.prev-btn, button.next-btn {
+      button.prev-btn,
+      button.next-btn {
         visibility: visible;
       }
     }

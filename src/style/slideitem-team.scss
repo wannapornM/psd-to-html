@@ -1,8 +1,11 @@
 .slideitem-team {
-  padding: 4rem 1rem;
-
   &-text {
     text-align: center;
+
+    h1 {
+      width: 95%;
+      margin: 0 auto;
+    }
   }
 
   &-container {
@@ -16,6 +19,7 @@
       align-items: end;
       overflow: hidden;
       height: 300px;
+      background-position-y: center;
 
       li.teamlist {
         display: inline-block;
@@ -99,8 +103,13 @@
     }
   }
 
+  @media only screen and (min-width: 709px) {
+    &-container {
+      margin-top: 3rem;
+    }
+  }
 
-  @media only screen and (min-width: 1080px) {
+  @media only screen and (min-width: 1024px) {
     padding: 2rem 0;
 
     &-text {
@@ -114,28 +123,29 @@
     &-container {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding: 2.5rem 1.5rem;
+      margin: 0;
 
       .team-image {
         height: 416px;
 
         .hover-info {
           padding: 20px 0;
-          
+
           a#name {
             font-size: 24px;
           }
-          
+
           li.teamlist {
             width: 18px;
             height: 18px;
           }
-          
+
           .destination {
             font-size: 16px;
             margin: 4px 0 10px;
           }
         }
       }
-    } 
+    }
   }
 }

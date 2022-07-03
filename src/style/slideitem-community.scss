@@ -1,5 +1,4 @@
 .slideitem-community {
-  padding: 4rem 1rem;
   background: #faf4f3;
   background-image: url("http://wp1.efforttech.com/newwp/hairly/wp-content/themes/hairly/assets/images/background/bg-lines.png");
   background-size: cover;
@@ -19,7 +18,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
 
     input {
       width: 100%;
@@ -35,17 +33,41 @@
     }
 
     .community-btn {
-      position: static;
       padding: 0.65rem 1.4rem;
       font-size: 14px;
       color: white;
       background: #f25630;
-      font-weight: 600;
+      font-weight: 500;
       border-radius: 30px;
       border: 0;
     }
     .community-btn:hover {
       background: #1b212f;
+    }
+  }
+
+  @media only screen and (min-width: 709px) {
+    &-text {
+      p {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+    &-form {
+      display: block;
+      position: relative;
+
+      input {
+        margin: 0;
+        padding: 1rem 11rem 1rem 2rem;
+      }
+
+      button.community-btn {
+        position: absolute;
+        top: 10%;
+        right: 1%;
+        padding: 0.8rem 1.5rem;
+      }
     }
   }
 

@@ -16,13 +16,12 @@
 @import "./slideitem-community.scss";
 @import "./slideitem-footer.scss";
 
-
 body {
   font-size: 16px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.06;
   letter-spacing: 2px;
@@ -58,6 +57,10 @@ hr {
   margin-bottom: 2rem;
 }
 
+section {
+  padding: 4rem 1rem;
+}
+
 button {
   background: #f25630;
   color: white;
@@ -73,7 +76,19 @@ button {
   overflow-x: hidden;
 }
 
+.head {
+  padding: 1rem;
+}
 
+@media only screen and (min-width: 709px) {
+  section {
+    padding: 4rem 3rem;
+  }
+
+  .head {
+    padding: 1rem 3rem;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   body {
