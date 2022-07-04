@@ -1,6 +1,7 @@
 .slideitem-team {
   &-text {
     text-align: center;
+    margin-bottom: 3rem;
 
     h1 {
       width: 95%;
@@ -103,9 +104,29 @@
     }
   }
 
-  @media only screen and (min-width: 709px) {
+  @media only screen and (min-width: 896px) {
     &-container {
       margin-top: 3rem;
+
+      .team-image {
+        height: 380px;
+
+        .hover-info {
+          a#name {
+            font-size: 22px;
+          }
+
+          li.teamlist {
+            width: 16px;
+            height: 16px;
+          }
+
+          .designation {
+            font-size: 16px;
+            margin-bottom: 4px;
+          }
+        }
+      }
     }
   }
 
