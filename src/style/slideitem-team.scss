@@ -12,14 +12,14 @@
   &-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
 
     .team-image {
       position: relative;
       display: flex;
       align-items: end;
       overflow: hidden;
-      height: 300px;
+      height: 400px;
       background-position-y: center;
 
       li.teamlist {
@@ -142,12 +142,14 @@
     }
 
     &-container {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+      // grid-template-columns: 1fr 1fr 1fr 1fr;
       padding: 2.5rem 1.5rem;
       margin: 0;
 
       .team-image {
-        height: 416px;
+        height: 500px;
 
         .hover-info {
           padding: 20px 0;

@@ -106,7 +106,7 @@
   }
 
   @media only screen and (min-width: 1024px) {
-    padding: 7rem 4rem;
+    // padding: 7rem 4rem;
 
     &-elements {
       grid-template-columns: repeat(4, 1fr);
@@ -114,7 +114,7 @@
 
       &-box {
         padding: 1.6rem 2rem;
-        font-size: 24px;
+        font-size: 20px;
 
         .icon {
           width: 100px;

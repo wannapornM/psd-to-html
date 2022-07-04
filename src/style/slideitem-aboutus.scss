@@ -133,7 +133,6 @@
     background: white;
   }
 
-
   @media only screen and (min-width: 896px) {
     gap: 3rem;
     flex-wrap: nowrap;
@@ -148,6 +147,7 @@
       margin: 0;
       text-align: start;
       position: relative;
+      justify-content: flex-start;
 
       h1 {
         max-width: 590px;
@@ -164,34 +164,34 @@
         right: -20px;
         visibility: visible;
       }
-    }
 
-    img#bg-about1 {
-      width: 75px;
-      height: 75px;
-      bottom: 8%;
-      right: 34%;
-    }
+      img#bg-about1 {
+        width: 75px;
+        height: 75px;
+        bottom: 8%;
+        right: 34%;
+      }
 
-    img#bg-about2 {
-      width: 120px;
-      height: 120px;
-      top: 5%;
-      visibility: visible;
+      img#bg-about2 {
+        width: 120px;
+        height: 120px;
+        top: 5%;
+      }
     }
   }
 
   @media only screen and (min-width: 1024px) {
-    margin: 7.5rem 4.3rem 3rem 4.3rem;
+    margin: 0;
+    gap: 5rem;
 
     &-img {
       width: 45%;
 
       &-opentime {
-        right: -8%;
-        bottom: -5%;
-        width: 60%;
-        padding: 55px 40px 45px 35px;
+        width: 70%;
+        padding: 16px 24px;
+        bottom: -8%;
+        right: -10%;
 
         div {
           margin-bottom: 10px;
@@ -207,22 +207,37 @@
     }
 
     &-text {
-      width: 40%;
-      margin: 8rem 3rem 8rem 7rem;
+      margin: 0;
+      width: 55%;
+
+      h1 {
+        width: 75%;
+        margin: 0 auto 3rem 0;
+      }
 
       p {
         margin-bottom: 3rem;
       }
 
       img#pattern {
-        width: auto;
+        width: 170px;
       }
-    }
 
-    img#bg-about1 {
-      width: 158px;
-      height: 158px;
-      visibility: visible;
+      img#bg-about1 {
+        width: 100px;
+        height: 100px;
+        bottom: -25px;
+        left: 10px;
+        right: 0;
+        // visibility: visible;
+      }
+
+      img#bg-about2 {
+        width: 160px;
+        height: 160px;
+        top: -56px;
+        visibility: visible;
+      }
     }
   }
 }
