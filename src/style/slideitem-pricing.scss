@@ -228,19 +228,26 @@
     border: 2px solid #f25630;
   }
 
-  @media only screen and (min-width: 709px) {
+  @media only screen and (min-width: 896px) {
+    flex-direction: column;
+    align-items: center;
+
     &-text {
       width: 100%;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
 
       h1 {
-        max-width: 430px;
+        // max-width: 430px;
+        max-width: 100%;
+        width: 100%;
       }
     }
 
     &-blocks {
-      margin-top: 0;
-      grid-template-columns: repeat(auto-fit, minmax(613px, 1fr));
+      margin: 0 0 4rem;
+      // grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+      width: 80%;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
       .block {
         .block-img {
@@ -259,22 +266,36 @@
 
           .title {
             margin-bottom: 8px;
+            font-size: 24px;
           }
 
           .description {
             padding: 0;
-            margin-bottom: 24px;
+            // margin-bottom: 24px;
+            // font-size: 20px;
+            margin-bottom: 3rem;
           }
         }
 
         .circle-price {
-          top: 398px;
+          // top: 398px;
+          width: 100px;
+          height: 100px;
+          top: 392px;
         }
 
         .circle-border {
-          top: 403px;
+          // top: 403px;
           right: 23px;
+          width: 90px;
+          height: 90px;
+          top: 397px;
         }
+      }
+
+      button.pricebox-btn {
+        font-size: 14px;
+        padding: 12px 36px;
       }
     }
   }

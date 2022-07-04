@@ -6,8 +6,9 @@
   background: black;
   padding: 10rem 3rem;
 
-  &-context {
-    width: 100%;
+
+  &-text {
+    width: 80%;
     text-align: center;
     color: white;
 
@@ -30,16 +31,35 @@
     background: transparent;
   }
 
-  @media only screen and (min-width: 709px) {
+  @media only screen and (min-width: 896px) {
     gap: 4rem;
+
+    &-text {
+      h1 {
+        font-size: 36px;
+        width: 100%;
+      }
+    }
   }
 
   @media only screen and (min-width: 1024px) {
-    padding: 19rem 8rem;
+    justify-content: flex-start;
+    padding: 18rem 4rem;
 
-    h1 {
-      font-size: 72px;
-      letter-spacing: 4px;
+    &-text {
+      text-align: start;
+      width: 100%;
+
+      h1 {
+        font-size: 72px;
+        letter-spacing: 4px;
+        width: 60%;
+        margin: 0;
+      }
+
+      p {
+        width: 70%;
+      }
     }
   }
 }
