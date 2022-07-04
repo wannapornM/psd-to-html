@@ -1,0 +1,330 @@
+.slideitem-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #fbf3f2;
+  position: relative;
+  z-index: 0;
+
+  &-text {
+    text-align: center;
+
+    h1 {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+
+  &-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem 0 3rem 0;
+
+    .block {
+      position: relative;
+      flex-basis: 31%;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+
+      .block-img {
+        height: 265px;
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          width: 100%;
+          transform: scale(1.15);
+          transition: all 0.3s ease-in-out;
+        }
+        img:hover {
+          transform: scale(1);
+        }
+      }
+      .block-img:before {
+        content: "";
+        width: 10%;
+        height: 100%;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: -30%;
+        background: white;
+        opacity: 0.3;
+        filter: blur(5px);
+        transform: skewX(-25deg);
+        transition: all 0.5s ease;
+      }
+      .block-img:hover::before {
+        animation: shine 1s;
+      }
+      @keyframes shine {
+        0% {
+          left: -30%;
+        }
+        100% {
+          left: 125%;
+        }
+      }
+
+      .block-info {
+        padding: 1.5rem;
+
+        .title {
+          font-size: 24px;
+          font-weight: 500;
+        }
+        .description {
+          padding: 4px 0 19px;
+          color: #212529;
+          opacity: 0.8;
+        }
+      }
+
+      .circle-price {
+        width: 90px;
+        height: 90px;
+        top: 218px;
+        right: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50%;
+        background: #e16137;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+      }
+
+      .circle-border {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 223px;
+        right: 22.76px;
+        border-radius: 50%;
+        border: 1px dashed white;
+        animation: rotation 10s infinite linear;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    }
+  }
+
+  img#bg-pricing1 {
+    position: absolute;
+    top: 44px;
+    left: 32px;
+    z-index: -1;
+    visibility: hidden;
+    animation: zoominzoomout-bg1 5s infinite;
+  }
+  @keyframes zoominzoomout-bg1 {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(0.9, 0.9);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  img#bg-pricing2 {
+    position: absolute;
+    max-height: 170px;
+    right: 18px;
+    top: 88px;
+    z-index: -1;
+    visibility: hidden;
+    animation: changeposition-bg2 5s infinite;
+  }
+  @keyframes changeposition-bg2 {
+    0% {
+      right: 18px;
+    }
+    50% {
+      right: 50px;
+    }
+    100% {
+      right: 18px;
+    }
+  }
+
+  img#bg-pricing3 {
+    position: absolute;
+    left: 68px;
+    bottom: 144px;
+    max-height: 170px;
+    z-index: -1;
+    visibility: hidden;
+    animation: changeposition-bg3 5s infinite;
+  }
+  @keyframes changeposition-bg3 {
+    0% {
+      left: 68px;
+    }
+    50% {
+      left: 98px;
+    }
+    100% {
+      left: 68px;
+    }
+  }
+
+  img#bg-pricing4 {
+    position: absolute;
+    right: 24px;
+    bottom: 112px;
+    z-index: -1;
+    visibility: hidden;
+    animation: changeposition-bg4 5s infinite;
+  }
+  @keyframes changeposition-bg4 {
+    0% {
+      bottom: 112px;
+    }
+    50% {
+      bottom: 148px;
+    }
+    100% {
+      bottom: 112px;
+    }
+  }
+
+  button.pricebox-btn {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+  button.pricebox-btn:hover {
+    opacity: 0.7;
+  }
+
+  button.pricing-btn {
+    width: fit-content;
+    background: white;
+    color: #f25630;
+    padding: 15px 40px;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.8s;
+  }
+  button.pricing-btn:hover {
+    background: #f25630;
+    color: white;
+    border: 2px solid #f25630;
+  }
+
+  @media only screen and (min-width: 709px) {
+    &-text {
+      width: 100%;
+      margin-bottom: 2rem;
+
+      h1 {
+        max-width: 430px;
+      }
+    }
+
+    &-blocks {
+      margin-top: 0;
+      grid-template-columns: repeat(auto-fit, minmax(613px, 1fr));
+
+      .block {
+        .block-img {
+          height: 445px;
+
+          img {
+            transform: translateY(-20%);
+          }
+        }
+        .block-img:before {
+          left: -26%;
+        }
+
+        .block-info {
+          padding: 3rem;
+
+          .title {
+            margin-bottom: 8px;
+          }
+
+          .description {
+            padding: 0;
+            margin-bottom: 24px;
+          }
+        }
+
+        .circle-price {
+          top: 398px;
+        }
+
+        .circle-border {
+          top: 403px;
+          right: 23px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 6rem 7.8rem;
+
+    &-blocks {
+      display: flex;
+      flex-wrap: wrap;
+
+      .block {
+        .block-img {
+          img {
+            transform: translateY(0);
+          }
+        }
+        .block-info {
+          padding: 2.5rem 2rem;
+
+          .title {
+            letter-spacing: 2px;
+          }
+
+          .description {
+            padding: 0.8rem 0 2rem 0;
+          }
+        }
+
+        .circle-price {
+          width: 100px;
+          height: 100px;
+          top: 39%;
+          right: 8%;
+        }
+
+        .circle-border {
+          width: 90px;
+          height: 90px;
+          top: 40%;
+          right: 9.2%;
+        }
+      }
+
+      img#bg-pricing1,
+      img#bg-pricing2,
+      img#bg-pricing3,
+      img#bg-pricing4 {
+        visibility: visible;
+      }
+    }
+  }
+}

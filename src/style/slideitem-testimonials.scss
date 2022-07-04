@@ -1,0 +1,135 @@
+.slideitem-testimonials {
+  &-text {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      max-width: 410px;
+      margin: 0 auto;
+      letter-spacing: 1px;
+    }
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+    padding: 0;
+
+    .img-testimonials {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      transform: scale(1.1);
+      z-index: -1;
+      animation: zoominzoomout-tes-img 2s infinite ease-in-out;
+    }
+    @keyframes zoominzoomout-tes-img {
+      0% {
+        transform: scale(1.1);
+      }
+      50% {
+        transform: scale(1.15);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+
+    .testimonials-content {
+      margin: 0 2rem;
+
+      p {
+        font-size: 16px;
+        padding: 0.6rem 0;
+      }
+
+      .testimonials-info {
+        padding: 1.5rem 0 0;
+
+        .testimonials-name {
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        .testimonials-designation {
+          font-size: 16px;
+        }
+      }
+
+      img.quote {
+        width: 55px;
+        height: 55px;
+      }
+
+      img.rate {
+        width: 96px;
+        height: 22px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 709px) {
+    &-text {
+      margin-bottom: 2rem;
+
+      h1 {
+        max-width: 100%;
+      }
+    }
+
+    &-container {
+      .testimonials-content {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 6.8rem 4.5rem 2rem 4.5rem;
+
+    &-text {
+      margin: 0;
+
+      h1 {
+        padding: 1.5rem 0;
+      }
+    }
+
+    &-container {
+      display: flex;
+      padding: 4rem 1rem;
+
+      .img-testimonials {
+        width: 500px;
+        height: 500px;
+      }
+
+      .testimonials-content {
+        padding: 3rem 4rem 3rem 9rem;
+
+        p {
+          padding: 1.5rem 0;
+        }
+
+        img.quote {
+          width: 72px;
+          height: 72px;
+        }
+
+        img.rate {
+          width: 110px;
+          height: 28px;
+        }
+
+        .testimonials-info {
+          padding: 1.5rem 0;
+
+          .testimonials-name {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

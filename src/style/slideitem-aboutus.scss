@@ -1,0 +1,212 @@
+.slideitem-aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  position: relative;
+  z-index: 0;
+
+  &-img {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    &-opentime {
+      position: absolute;
+      width: 85%;
+      max-width: 340px;
+      bottom: -10px;
+      right: -10px;
+      padding: 1rem;
+      color: white;
+      background: #db8d83;
+      border-radius: 10px;
+      font-size: 14px;
+
+      hr {
+        margin-bottom: 1rem;
+      }
+
+      div:first-child {
+        font-size: 1.42857em;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  &-context {
+    flex-grow: 1;
+    margin-top: 2.5rem;
+    text-align: center;
+
+    h1 {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    p {
+      margin: 1rem 0 2rem;
+    }
+  }
+
+  img#pattern {
+    width: 44%;
+    position: absolute;
+    bottom: 5%;
+    right: -5%;
+    z-index: -1;
+    visibility: hidden;
+    animation: rotation 15s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  img#bg-about1 {
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    right: 228px;
+    bottom: 30px;
+    z-index: -1;
+    visibility: hidden;
+    animation: zoominzoomout 3s infinite;
+  }
+  @keyframes zoominzoomout {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  img#bg-about2 {
+    position: absolute;
+    width: 272px;
+    height: 272px;
+    top: 16px;
+    right: 28px;
+    z-index: -1;
+    visibility: hidden;
+    animation: goandback 4s infinite;
+  }
+  @keyframes goandback {
+    0% {
+      right: 28px;
+    }
+    50% {
+      right: 58px;
+    }
+    100% {
+      right: 28px;
+    }
+  }
+
+  button.about-btn:hover {
+    color: #f25630;
+    border: 2px solid #f25630;
+    background: white;
+  }
+
+  @media only screen and (min-width: 709px) {
+    gap: 2rem;
+    flex-wrap: nowrap;
+
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+
+    &-context {
+      width: 100%;
+      margin: 0;
+
+      h1 {
+        max-width: 590px;
+        margin: 0 auto;
+      }
+    }
+
+    img#pattern {
+      width: 20%;
+      bottom: 10%;
+      right: 0;
+      visibility: visible;
+    }
+
+    img#bg-about1 {
+      width: 75px;
+      height: 75px;
+      bottom: 8%;
+      right: 34%;
+    }
+
+    img#bg-about2 {
+      width: 120px;
+      height: 120px;
+      top: 5%;
+      visibility: visible;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    margin: 7.5rem 4.3rem 3rem 4.3rem;
+
+    &-img {
+      width: 45%;
+
+      &-opentime {
+        right: -8%;
+        bottom: -5%;
+        width: 60%;
+        padding: 55px 40px 45px 35px;
+
+        div {
+          margin-bottom: 10px;
+          font-weight: 300;
+        }
+
+        div:first-child {
+          font-size: 24px;
+          font-weight: 500;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    &-context {
+      width: 40%;
+      margin: 8rem 3rem 8rem 7rem;
+
+      p {
+        margin-bottom: 3rem;
+      }
+
+      img#pattern {
+        width: auto;
+      }
+    }
+
+    img#bg-about1 {
+      width: 158px;
+      height: 158px;
+      visibility: visible;
+    }
+  }
+}

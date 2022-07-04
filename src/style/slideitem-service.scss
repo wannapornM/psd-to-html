@@ -1,0 +1,117 @@
+.slideitem-service {
+  background: white;
+
+  &-text {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    &-heading {
+      font-size: 44px;
+      line-height: 1.06;
+      font-weight: 600;
+    }
+  }
+
+  &-elements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    background: white;
+
+    &-box {
+      padding: 0.8rem 0.6rem;
+      text-align: center;
+      font-weight: 500;
+      border: 1px solid #eeeeee;
+      border-radius: 12px;
+      background: white;
+      line-height: 1.25;
+      animation-name: fadeInUp;
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1rem;
+        padding: 1.5rem;
+        border-radius: 50%;
+      }
+
+      #icon-treatment {
+        background: #c7e1c9;
+        transition: 2s;
+      }
+      #icon-treatment:hover {
+        background: #01a13c;
+        transform: rotate(180deg);
+      }
+
+      #icon-lady-haircut {
+        background: #fad6cd;
+      }
+
+      #icon-men-haircut {
+        background: #f1cdda;
+      }
+
+      #icon-kid-haircut {
+        background: #d8d0ed;
+      }
+
+      #icon-beard-trim {
+        background: #f6cfd1;
+      }
+
+      #icon-hair-color {
+        background: #fbecc6;
+      }
+
+      #icon-curly-hair {
+        background: #bfc1f3;
+      }
+
+      #icon-hair-state {
+        background: #ceede6;
+      }
+    }
+
+    &-box:hover {
+      border: none;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+
+  @media only screen and (min-width: 709px) {
+    &-text {
+      h1 {
+        max-width: 465px;
+        margin: 0 auto;
+      }
+    }
+
+    &-elements {
+      &-box {
+        padding: 1.6rem 1rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 7rem 4rem;
+
+    &-elements {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr;
+
+      &-box {
+        padding: 1.6rem 2rem;
+        font-size: 24px;
+
+        .icon {
+          width: 100px;
+          height: 100px;
+          margin: 0 auto 1.5rem;
+        }
+      }
+    }
+  }
+}

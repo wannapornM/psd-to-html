@@ -1,0 +1,45 @@
+.slideitem-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  background: black;
+  padding: 10rem 3rem;
+
+  &-context {
+    width: 100%;
+    text-align: center;
+    color: white;
+
+    h1 {
+      width: 85%;
+      margin: 0 auto;
+      color: white;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-weight: 300;
+      color: white;
+    }
+  }
+
+  .home-btn:hover {
+    color: #f25630;
+    border: 2px solid #f25630;
+    background: transparent;
+  }
+
+  @media only screen and (min-width: 709px) {
+    gap: 4rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 19rem 8rem;
+
+    h1 {
+      font-size: 72px;
+      letter-spacing: 4px;
+    }
+  }
+}
