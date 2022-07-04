@@ -87,8 +87,8 @@
       .circle-price {
         width: 90px;
         height: 90px;
-        top: 42%;
-        right: 6%;
+        top: 218px;
+        right: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -104,8 +104,8 @@
         width: 80px;
         height: 80px;
         position: absolute;
-        top: 43%;
-        right: 7.8%;
+        top: 223px;
+        right: 22.76px;
         border-radius: 50%;
         border: 1px dashed white;
         animation: rotation 10s infinite linear;
@@ -268,12 +268,12 @@
         }
 
         .circle-price {
-          top: 57%;
+          top: 398px;
         }
 
         .circle-border {
-          top: 57.75%;
-          right: 6.75%;
+          top: 403px;
+          right: 23px;
         }
       }
     }

@@ -1,8 +1,11 @@
 .slideitem-testimonials {
   &-text {
     text-align: center;
+    margin-bottom: 2rem;
 
     h1 {
+      max-width: 410px;
+      margin: 0 auto;
       letter-spacing: 1px;
     }
   }
@@ -71,7 +74,7 @@
       margin-bottom: 2rem;
 
       h1 {
-        width: 100%;
+        max-width: 100%;
       }
     }
 
