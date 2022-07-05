@@ -1,3 +1,7 @@
+.headtop-body {
+  background: #db8d83;
+}
+
 .head-top {
   display: flex;
   flex-wrap: wrap;
@@ -6,11 +10,15 @@
   background: #db8d83;
 
   &-promotion {
+    display: none;
     font-size: 16px;
     color: white;
   }
 
   &-socials {
+    display: flex;
+    gap: 2rem;
+
     img {
       display: inline;
       width: 20px;
@@ -22,15 +30,18 @@
 
     .social-link {
       display: inline;
-      padding: 0 12px;
     }
   }
 
-  @media only screen and (min-width: 896px) {
-
+  @media only screen and (min-width: 667px) {
     justify-content: space-between;
-  }
 
-  @media only screen and (min-width: 1024px) {
+    &-promotion {
+      display: block;
+    }
+
+    &-socials {
+      gap: 1.5rem;
+    }
   }
 }

@@ -1,3 +1,7 @@
+.home-body {
+  background: black;
+}
+
 .slideitem-home {
   display: flex;
   flex-wrap: wrap;
@@ -5,7 +9,6 @@
   gap: 3rem;
   background: black;
   padding: 10rem 3rem;
-
 
   &-text {
     width: 80%;
@@ -31,23 +34,28 @@
     background: transparent;
   }
 
-  @media only screen and (min-width: 896px) {
+  @media only screen and (min-width: 768px) {
+    justify-content: flex-start;
     gap: 4rem;
 
     &-text {
+      text-align: start;
+
       h1 {
         font-size: 36px;
         width: 100%;
       }
+
+      p {
+        width: 70%;
+      }
     }
   }
 
-  @media only screen and (min-width: 1024px) {
-    justify-content: flex-start;
+  @media only screen and (min-width: 1200px) {
     padding: 18rem 4rem;
 
     &-text {
-      text-align: start;
       width: 100%;
 
       h1 {

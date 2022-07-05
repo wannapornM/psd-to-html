@@ -52,7 +52,7 @@
     text-align: center;
 
     h1 {
-      max-width: 465px;
+      width: 300px;
       margin: 0 auto;
     }
 
@@ -61,15 +61,15 @@
     }
 
     p {
-      margin: 1rem 0 2rem;
+      margin: 2rem 0 3rem;
     }
   }
 
   img#pattern {
     width: 44%;
     position: absolute;
-    bottom: 5%;
-    right: -5%;
+    bottom: 0;
+    right: 0;
     z-index: -1;
     visibility: hidden;
     animation: rotation 15s infinite linear;
@@ -87,8 +87,8 @@
     position: absolute;
     width: 95px;
     height: 95px;
-    right: 228px;
-    bottom: 30px;
+    right: 0;
+    bottom: 0;
     z-index: -1;
     visibility: hidden;
     animation: zoominzoomout 3s infinite;
@@ -110,20 +110,20 @@
     width: 272px;
     height: 272px;
     top: 16px;
-    right: 28px;
+    right: 40px;
     z-index: -1;
     visibility: hidden;
     animation: goandback 4s infinite;
   }
   @keyframes goandback {
     0% {
-      right: 28px;
+      right: 40px;
     }
     50% {
-      right: 58px;
+      right: 70px;
     }
     100% {
-      right: 28px;
+      right: 40px;
     }
   }
 
@@ -133,7 +133,15 @@
     background: white;
   }
 
-  @media only screen and (min-width: 896px) {
+  @media only screen and (min-width: 667px) {
+    &-text {
+      h1 {
+        width: 500px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
     gap: 3rem;
     flex-wrap: nowrap;
 
@@ -150,8 +158,8 @@
       justify-content: flex-start;
 
       h1 {
-        max-width: 590px;
-        margin-bottom: 3rem;
+        width: 350px;
+        margin: 0 0 3rem 0;
       }
 
       p {
@@ -168,21 +176,20 @@
       img#bg-about1 {
         width: 75px;
         height: 75px;
-        bottom: 8%;
-        right: 34%;
+        bottom: 0;
+        right: 0;
       }
 
       img#bg-about2 {
         width: 120px;
         height: 120px;
-        top: 5%;
+        top: 0;
       }
     }
   }
 
-  @media only screen and (min-width: 1024px) {
-    margin: 0;
-    gap: 5rem;
+  @media only screen and (min-width: 1200px) {
+    gap: 6rem;
 
     &-img {
       width: 45%;
@@ -211,7 +218,7 @@
       width: 55%;
 
       h1 {
-        width: 75%;
+        width: 420px;
         margin: 0 auto 3rem 0;
       }
 
@@ -226,10 +233,9 @@
       img#bg-about1 {
         width: 100px;
         height: 100px;
-        bottom: -25px;
-        left: 10px;
-        right: 0;
-        // visibility: visible;
+        bottom: -5%;
+        left: 38%;
+        visibility: visible;
       }
 
       img#bg-about2 {

@@ -1,3 +1,7 @@
+.pricing-body {
+  background: #fbf3f2;
+}
+
 .slideitem-pricing {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +15,7 @@
     width: 100%;
 
     h1 {
-      width: 95%;
+      width: 325px;
       margin: 0 auto;
     }
   }
@@ -35,11 +39,6 @@
         border-radius: 12px 12px 0 0;
         overflow: hidden;
         position: relative;
-
-        #coloring {
-          // object-position: center;
-          // height: 100%;
-        }
 
         img {
           width: 100%;
@@ -236,7 +235,19 @@
     border: 2px solid #f25630;
   }
 
-  @media only screen and (min-width: 896px) {
+  @media only screen and (min-width: 667px) {
+    &-text {
+      h1 {
+        width: 100%;
+      }
+    }
+
+    &-blocks {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
     flex-direction: column;
     align-items: center;
 
@@ -245,32 +256,25 @@
       margin-bottom: 3rem;
 
       h1 {
-        // max-width: 430px;
-        max-width: 100%;
-        width: 100%;
+        width: 520px;
       }
     }
 
     &-blocks {
       margin: 0 0 4rem;
-      // grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
       width: 80%;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 
       .block {
         .block-img {
           height: 445px;
-
-          img {
-            // transform: translateY(-20%);
-          }
         }
         .block-img:before {
           left: -26%;
         }
 
         .block-info {
-          padding: 3rem;
+          padding: 2rem;
 
           .title {
             margin-bottom: 8px;
@@ -279,21 +283,17 @@
 
           .description {
             padding: 0;
-            // margin-bottom: 24px;
-            // font-size: 20px;
             margin-bottom: 3rem;
           }
         }
 
         .circle-price {
-          // top: 398px;
           width: 100px;
           height: 100px;
           top: 392px;
         }
 
         .circle-border {
-          // top: 403px;
           right: 23px;
           width: 90px;
           height: 90px;
@@ -308,21 +308,22 @@
     }
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1200px) {
+    &-text {
+      h1 {
+        width: 100%;
+      }
+    }
+
     &-blocks {
       width: 100%;
-      // display: flex;
-      // flex-wrap: wrap;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
       .block {
         .block-img {
-          height: 260px;
-
-          img {
-            // transform: translateY(0);
-          }
+          height: 350px;
         }
+
         .block-info {
           padding: 1.5rem 2rem;
 
@@ -338,14 +339,14 @@
         .circle-price {
           width: 90px;
           height: 90px;
-          top: 213px;
+          top: 302px;
           right: 22px;
         }
 
         .circle-border {
           width: 80px;
           height: 80px;
-          top: 218px;
+          top: 307px;
           right: 26.6px;
         }
       }

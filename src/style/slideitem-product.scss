@@ -4,7 +4,7 @@
     margin-bottom: 3rem;
 
     h1 {
-      width: 85%;
+      width: 320px;
       margin: 0 auto;
     }
   }
@@ -130,34 +130,46 @@
     color: white;
   }
 
-  @media only screen and (min-width: 896px) {
-  }
-
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 667px) {
     &-text {
       h1 {
-        padding: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    &-text {
+      h1 {
+        width: 100%;
       }
     }
 
     &-container {
+      display: flex;
+      position: static;
+      align-items: center;
+      gap: 1rem;
+
       .products {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
         gap: 2rem;
-        padding: 0 6.5rem;
 
         .title {
           font-size: 24px;
-          margin-bottom: 10px;
         }
 
         .footer {
-          padding: 1rem 2rem;
+          padding: 0.6rem 2rem;
         }
       }
 
       button.prev-btn,
       button.next-btn {
+        position: static;
+        flex-shrink: 0;
         visibility: visible;
       }
     }

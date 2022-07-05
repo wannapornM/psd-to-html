@@ -5,10 +5,9 @@
     margin-bottom: 2rem;
     text-align: center;
 
-    &-heading {
-      font-size: 44px;
-      line-height: 1.06;
-      font-weight: 600;
+    h1 {
+      width: 300px;
+      margin: 0 auto;
     }
   }
 
@@ -80,11 +79,24 @@
     }
   }
 
-  @media only screen and (min-width: 896px) {
+  @media only screen and (min-width: 667px) {
+    &-text {
+      h1 {
+        width: 465px;
+        margin: 0 auto;
+      }
+    }
+
+    &-elements {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
     &-text {
       margin-bottom: 3rem;
       h1 {
-        max-width: 100%;
+        width: 495px;
       }
     }
 
@@ -105,8 +117,12 @@
     }
   }
 
-  @media only screen and (min-width: 1024px) {
-    // padding: 7rem 4rem;
+  @media only screen and (min-width: 1200px) {
+    &-text {
+      h1 {
+        width: 100%;
+      }
+    }
 
     &-elements {
       grid-template-columns: repeat(4, 1fr);
