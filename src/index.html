@@ -9,8 +9,7 @@
   </head>
 
   <body>
-    <div id="app"></div>
-
+    <!-- <div id="app"> -->
     <div class="main-app">
       <div class="headtop-body">
         <div class="head head-top">
@@ -68,29 +67,35 @@
           </a>
         </div>
 
-        <div class="head-main-link">
-          <ul class="head-main-link-menu">
-            <li class="link-menu">
+        <div class="head-main-container">
+          <ul class="link-menus">
+            <li class="link-menu" id="home">
               <a href="" id="active" title="Home">Home</a>
+              <ul class="submenu home-listmenus">
+                <li class="listmenus"><a href="">Homepage 01</a></li>
+                <li class="listmenus"><a href="">Homepage 02</a></li>
+                <li class="listmenus"><a href="">Homepage 03</a></li>
+                <li class="listmenus"><a href="">Header Styles</a></li>
+              </ul>
+            </li>
+            <li class="link-menu aboutus">
+              <a href="" class="menu" id="aboutus" title="About us">About Us</a>
             </li>
             <li class="link-menu">
-              <a href="" class="menu" title="About us">About Us</a>
+              <a href="" class="menu" id="service" title="Services">Services</a>
             </li>
             <li class="link-menu">
-              <a href="" class="menu" title="Services">Services</a>
+              <a href="" class="menu" id="blog" title="Blog">Blog</a>
             </li>
             <li class="link-menu">
-              <a href="" class="menu" title="Blog">Blog</a>
-            </li>
-            <li class="link-menu">
-              <a href="" class="menu" title="Shop">Shop</a>
+              <a href="" class="menu" id="shop" title="Shop">Shop</a>
             </li>
             <li class="link-menu">
               <a href="" class="menu" title="Contact">Contact</a>
             </li>
           </ul>
 
-          <ul class="head-main-link-other">
+          <ul class="link-others">
             <li class="link-other">
               <a href="">
                 <img src="../assets/user.png" alt="User icon" loading="lazy" />
@@ -114,6 +119,46 @@
                 />
               </a>
             </li>
+          </ul>
+
+          <!-- <ul class="submenu home-listmenus" id="homelists">
+            <li class="listmenus"><a href="">Homepage 01</a></li>
+            <li class="listmenus"><a href="">Homepage 02</a></li>
+            <li class="listmenus"><a href="">Homepage 03</a></li>
+            <li class="listmenus"><a href="">Header Styles</a></li>
+          </ul> -->
+
+          <ul class="submenu about-listmenus">
+            <li class="listmenus"><a href="">About</a></li>
+            <li class="listmenus"><a href="">Team</a></li>
+            <li class="listmenus"><a href="">Coming Soon</a></li>
+          </ul>
+
+          <ul class="submenu service-listmenus">
+            <li class="listmenus"><a href="">Services</a></li>
+            <li class="listmenus"><a href="">Hair Treatment</a></li>
+            <li class="listmenus"><a href="">Ladies Haircut</a></li>
+            <li class="listmenus"><a href="">Beard Trim</a></li>
+            <li class="listmenus"><a href="">Hair Color</a></li>
+            <li class="listmenus"><a href="">Curly Hair</a></li>
+            <li class="listmenus"><a href="">Hair State</a></li>
+            <li class="listmenus"><a href="">Kid's Haircut</a></li>
+            <li class="listmenus"><a href="">Men's Haircut</a></li>
+          </ul>
+
+          <ul class="submenu blog-listmenus">
+            <li class="listmenus"><a href="">Blog Grid View</a></li>
+            <li class="listmenus"><a href="">Our Blog</a></li>
+            <li class="listmenus"><a href="">Blog Single</a></li>
+            <li class="listmenus"><a href="">Not Found</a></li>
+          </ul>
+
+          <ul class="submenu shop-listmenus">
+            <li class="listmenus"><a href="">Product</a></li>
+            <li class="listmenus"><a href="">Product Details</a></li>
+            <li class="listmenus"><a href="">Shopping Cart</a></li>
+            <li class="listmenus"><a href="">Checkout</a></li>
+            <li class="listmenus"><a href="">My account</a></li>
           </ul>
         </div>
       </div>
@@ -850,9 +895,10 @@
         </ul>
         <p>© 2022 Hairly Salon. All Right Reserved</p>
       </section>
+      <!-- </div> -->
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
     <script type="module" src="index.js"></script>
   </body>
 </html>

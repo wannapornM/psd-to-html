@@ -22,43 +22,91 @@
     }
   }
 
-  &-link {
-    display: none;
+  &-container {
+    display: flex;
+    gap: 8px;
+    position: relative;
 
-    img {
-      display: inline;
-      width: 20px;
-      height: 20px;
+    .link-menus,
+    .link-others {
+      // display: none;
+
+      img {
+        display: inline;
+        width: 20px;
+        height: 20px;
+      }
+
+      li.link-menu,
+      li.link-other {
+        padding: 0 14px;
+        color: #60646d;
+        font-weight: 500;
+      }
+      li.link-menu:hover {
+        color: #232835;
+      }
+
+      a {
+        display: inline-block;
+      }
+      a#active {
+        border-bottom: 3px dashed #db8d83;
+      }
+      a.menu:after {
+        display: block;
+        content: "";
+        border-bottom: 3px dashed #db8d83;
+        transform: scaleX(0);
+        transition: transform 350ms ease-in-out;
+      }
+      a:hover:after {
+        transform: scaleX(1);
+      }
+      a.menu:after {
+        transform-origin: 0% 50%;
+      }
     }
 
-    li.link-menu,
-    li.link-other {
-      padding: 0 14px;
-      color: #60646d;
-      font-weight: 500;
-    }
-    li.link-menu:hover {
-      color: #232835;
-    }
-
-    a {
-      display: inline-block;
-    }
-    a#active {
-      border-bottom: 3px dashed #db8d83;
-    }
-    a.menu:after {
+    li.listmenus {
       display: block;
-      content: "";
-      border-bottom: 3px dashed #db8d83;
-      transform: scaleX(0);
-      transition: transform 350ms ease-in-out;
+      padding: 10px 24px;
+      font-size: 16px;
+      border-bottom: 1px solid rgb(0, 0, 0, 0.1);
     }
-    a:hover:after {
-      transform: scaleX(1);
+    li.listmenus:hover {
+      background: #f25630;
+      color: white;
     }
-    a.menu:after {
-      transform-origin: 0% 50%;
+
+    .submenu {
+      position: absolute;
+      background: white;
+      top: 65px;
+      width: 220px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .home-listmenus {
+      left: 14px;
+      display: none;
+    }
+    a#active:hover + .home-listmenus {
+      display: block;
+    }
+
+    .about-listmenus {
+      left: 90px;
+    }
+    .service-listmenus {
+      left: 196px;
+    }
+    .blog-listmenus {
+      left: 295px;
+    }
+    .shop-listmenus {
+      left: 360px;
     }
   }
 
@@ -66,7 +114,8 @@
     padding: 1.425rem 8rem;
     z-index: 5;
 
-    &-link {
+    &-menu,
+    &-other {
       display: flex;
     }
   }
