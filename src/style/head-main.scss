@@ -26,10 +26,12 @@
     display: flex;
     gap: 8px;
     position: relative;
+    height: inherit;
+    align-items: center;
 
     .link-menus,
     .link-others {
-      // display: none;
+      height: 100%;
 
       img {
         display: inline;
@@ -42,6 +44,9 @@
         padding: 0 14px;
         color: #60646d;
         font-weight: 500;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
       }
       li.link-menu:hover {
         color: #232835;
@@ -82,31 +87,33 @@
     .submenu {
       position: absolute;
       background: white;
-      top: 65px;
+      top: 100px;
       width: 220px;
       border-radius: 10px;
       overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     }
 
     .home-listmenus {
       left: 14px;
-      display: none;
+      visibility: hidden;
     }
-    a#active:hover + .home-listmenus {
-      display: block;
-    }
-
     .about-listmenus {
       left: 90px;
+      visibility: hidden;
     }
     .service-listmenus {
       left: 196px;
+      visibility: hidden;
     }
     .blog-listmenus {
       left: 295px;
+      visibility: hidden;
     }
     .shop-listmenus {
       left: 360px;
+      visibility: hidden;
     }
   }
 

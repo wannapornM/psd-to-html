@@ -1,8 +1,18 @@
-// import { createRoot } from "react-dom/client";
-// import App from "./App";
+// // let home = document.getElementById("home");
+// let homeListmenus = document.getElementById("home-listmenus");
+// home.addEventListener("mouseover", () => {
+//   homeListmenus.style.visibility = "visible";
+// });
+// home.addEventListener("mouseleave", () => {
+//   homeListmenus.style.visibility = "hidden";
+// });
 
-// import "./style/index.scss";
-
-// const app = document.getElementById("app");
-// const root = createRoot(app);
-// root.render(<App />);
+function show_dropdown(element) {
+  // console.log(parent.id);
+  child = document.getElementById(element.id).childNodes[3];
+  child.style.visibility = "visible";
+}
+function hide_dropdown(element) {
+  child = document.getElementById(element.id).childNodes[3];
+  child.style.visibility = "hidden";
+}

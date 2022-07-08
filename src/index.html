@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>psd-to-html</title>
     <link rel="stylesheet" href="./style/index.scss" />
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -69,27 +70,86 @@
 
         <div class="head-main-container">
           <ul class="link-menus">
-            <li class="link-menu" id="home">
+            <li
+              class="link-menu"
+              id="home"
+              onmouseover="show_dropdown(this)"
+              onmouseleave="hide_dropdown(this)"
+            >
               <a href="" id="active" title="Home">Home</a>
-              <ul class="submenu home-listmenus">
+              <ul class="submenu" id="home-listmenus">
                 <li class="listmenus"><a href="">Homepage 01</a></li>
                 <li class="listmenus"><a href="">Homepage 02</a></li>
                 <li class="listmenus"><a href="">Homepage 03</a></li>
                 <li class="listmenus"><a href="">Header Styles</a></li>
               </ul>
             </li>
-            <li class="link-menu aboutus">
-              <a href="" class="menu" id="aboutus" title="About us">About Us</a>
+
+            <li
+              class="link-menu"
+              id="aboutus"
+              onmouseover="show_dropdown(this)"
+              onmouseleave="hide_dropdown(this)"
+            >
+              <a href="" class="menu" title="About us">About Us</a>
+              <ul class="submenu" id="about-listmenus">
+                <li class="listmenus"><a href="">About</a></li>
+                <li class="listmenus"><a href="">Team</a></li>
+                <li class="listmenus"><a href="">Coming Soon</a></li>
+              </ul>
             </li>
-            <li class="link-menu">
-              <a href="" class="menu" id="service" title="Services">Services</a>
+
+            <li
+              class="link-menu"
+              id="service"
+              onmouseover="show_dropdown(this)"
+              onmouseleave="hide_dropdown(this)"
+            >
+              <a href="" class="menu" title="Services">Services</a>
+              <ul class="submenu" id="service-listmenus">
+                <li class="listmenus"><a href="">Services</a></li>
+                <li class="listmenus"><a href="">Hair Treatment</a></li>
+                <li class="listmenus"><a href="">Ladies Haircut</a></li>
+                <li class="listmenus"><a href="">Beard Trim</a></li>
+                <li class="listmenus"><a href="">Hair Color</a></li>
+                <li class="listmenus"><a href="">Curly Hair</a></li>
+                <li class="listmenus"><a href="">Hair State</a></li>
+                <li class="listmenus"><a href="">Kid's Haircut</a></li>
+                <li class="listmenus"><a href="">Men's Haircut</a></li>
+              </ul>
             </li>
-            <li class="link-menu">
-              <a href="" class="menu" id="blog" title="Blog">Blog</a>
+
+            <li
+              class="link-menu"
+              id="blog"
+              onmouseover="show_dropdown(this)"
+              onmouseleave="hide_dropdown(this)"
+            >
+              <a href="" class="menu" title="Blog">Blog</a>
+              <ul class="submenu" id="blog-listmenus">
+                <li class="listmenus"><a href="">Blog Grid View</a></li>
+                <li class="listmenus"><a href="">Our Blog</a></li>
+                <li class="listmenus"><a href="">Blog Single</a></li>
+                <li class="listmenus"><a href="">Not Found</a></li>
+              </ul>
             </li>
-            <li class="link-menu">
-              <a href="" class="menu" id="shop" title="Shop">Shop</a>
+
+            <li
+              class="link-menu"
+              id="shop"
+              onmouseover="show_dropdown(this)"
+              onmouseleave="hide_dropdown(this)"
+            >
+              <a href="" class="menu" title="Shop">Shop</a>
+              <ul class="submenu" id="shop-listmenus">
+                <li class="listmenus"><a href="">Product</a></li>
+                <li class="listmenus"><a href="">Product Details</a></li>
+                <li class="listmenus"><a href="">Shopping Cart</a></li>
+                <li class="listmenus"><a href="">Checkout</a></li>
+                <li class="listmenus"><a href="">My account</a></li>
+              </ul>
             </li>
+
             <li class="link-menu">
               <a href="" class="menu" title="Contact">Contact</a>
             </li>
@@ -119,46 +179,6 @@
                 />
               </a>
             </li>
-          </ul>
-
-          <!-- <ul class="submenu home-listmenus" id="homelists">
-            <li class="listmenus"><a href="">Homepage 01</a></li>
-            <li class="listmenus"><a href="">Homepage 02</a></li>
-            <li class="listmenus"><a href="">Homepage 03</a></li>
-            <li class="listmenus"><a href="">Header Styles</a></li>
-          </ul> -->
-
-          <ul class="submenu about-listmenus">
-            <li class="listmenus"><a href="">About</a></li>
-            <li class="listmenus"><a href="">Team</a></li>
-            <li class="listmenus"><a href="">Coming Soon</a></li>
-          </ul>
-
-          <ul class="submenu service-listmenus">
-            <li class="listmenus"><a href="">Services</a></li>
-            <li class="listmenus"><a href="">Hair Treatment</a></li>
-            <li class="listmenus"><a href="">Ladies Haircut</a></li>
-            <li class="listmenus"><a href="">Beard Trim</a></li>
-            <li class="listmenus"><a href="">Hair Color</a></li>
-            <li class="listmenus"><a href="">Curly Hair</a></li>
-            <li class="listmenus"><a href="">Hair State</a></li>
-            <li class="listmenus"><a href="">Kid's Haircut</a></li>
-            <li class="listmenus"><a href="">Men's Haircut</a></li>
-          </ul>
-
-          <ul class="submenu blog-listmenus">
-            <li class="listmenus"><a href="">Blog Grid View</a></li>
-            <li class="listmenus"><a href="">Our Blog</a></li>
-            <li class="listmenus"><a href="">Blog Single</a></li>
-            <li class="listmenus"><a href="">Not Found</a></li>
-          </ul>
-
-          <ul class="submenu shop-listmenus">
-            <li class="listmenus"><a href="">Product</a></li>
-            <li class="listmenus"><a href="">Product Details</a></li>
-            <li class="listmenus"><a href="">Shopping Cart</a></li>
-            <li class="listmenus"><a href="">Checkout</a></li>
-            <li class="listmenus"><a href="">My account</a></li>
           </ul>
         </div>
       </div>
