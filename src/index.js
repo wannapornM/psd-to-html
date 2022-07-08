@@ -1,8 +1,9 @@
-import { createRoot } from "react-dom/client";
-import App from "./App";
+function showDropdown(element) {
+  child = document.getElementById(element.id).childNodes[3];
+  child.style.visibility = "visible";
+}
 
-import "./style/index.scss";
-
-const app = document.getElementById("app");
-const root = createRoot(app);
-root.render(<App />);
+function hideDropdown(element) {
+  child = document.getElementById(element.id).childNodes[3];
+  child.style.visibility = "hidden";
+}
