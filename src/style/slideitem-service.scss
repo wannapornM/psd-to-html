@@ -25,7 +25,6 @@
       border-radius: 12px;
       background: white;
       line-height: 1.25;
-      animation-name: fadeInUp;
 
       .icon {
         width: 80px;
@@ -33,49 +32,125 @@
         margin: 0 auto 1rem;
         padding: 1.5rem;
         border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 52%;
       }
 
       #icon-treatment {
-        background: #c7e1c9;
-        transition: 2s;
+        background-image: url("../../assets/hair-treatment.png");
+        background-color: #c7e1c9;
+        transition: all 0.6s;
       }
-      #icon-treatment:hover {
-        background: #01a13c;
-        transform: rotate(180deg);
-      }
-
       #icon-lady-haircut {
-        background: #fad6cd;
+        background-image: url("../../assets/lady-haircut.png");
+        background-color: #fad6cd;
+        transition: all 0.6s;
       }
-
       #icon-men-haircut {
-        background: #f1cdda;
+        background-image: url("../../assets/men-haircut.png");
+        background-color: #f1cdda;
+        transition: all 0.6s;
       }
-
       #icon-kid-haircut {
-        background: #d8d0ed;
+        background-image: url("../../assets/boy.png");
+        background-color: #d8d0ed;
+        transition: all 0.6s;
       }
-
       #icon-beard-trim {
-        background: #f6cfd1;
+        background-image: url("../../assets/beard-trim.png");
+        background-color: #f6cfd1;
+        transition: all 0.6s;
       }
-
       #icon-hair-color {
-        background: #fbecc6;
+        background-image: url("../../assets/hair-dye.png");
+        background-color: #fbecc6;
+        transition: all 0.6s;
       }
-
       #icon-curly-hair {
-        background: #bfc1f3;
+        background-image: url("../../assets/curly-hair.png");
+        background-color: #bfc1f3;
+        transition: all 0.6s;
       }
 
       #icon-hair-state {
-        background: #ceede6;
+        background-image: url("../../assets/hair-state.png");
+        background-color: #ceede6;
+        transition: all 0.6s;
+      }
+
+      .fadeOut {
+        animation-name: fadeOut;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeOut {
+        0% {
+          transform: scale(1) rotate(360deg);
+        }
+        50% {
+          transform: scale(0) rotate(180deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
       }
     }
 
     &-box:hover {
       border: none;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      #icon-treatment {
+        background-image: url("../../assets/hair-treatment-white.png");
+        background-color: #01a13c;
+      }
+      #icon-lady-haircut {
+        background-image: url("../../assets/lady-haircut-white.png");
+        background-color: #ff6b4f;
+      }
+      #icon-men-haircut {
+        background-image: url("../../assets/men-haircut-white.png");
+        background-color: #e94c84;
+      }
+      #icon-kid-haircut {
+        background-image: url("../../assets/kid-haircut-white.png");
+        background-color: #8361c8;
+      }
+      #icon-beard-trim {
+        background-image: url("../../assets/beard-trim-white.png");
+        background-color: #f0545f;
+      }
+      #icon-hair-color {
+        background-image: url("../../assets/hair-color-white.png");
+        background-color: #f7bd01;
+      }
+      #icon-curly-hair {
+        background-image: url("../../assets/curly-hair-white.png");
+        background-color: #2930e1;
+      }
+      #icon-hair-state {
+        background-image: url("../../assets/hair-state-white.png");
+        background-color: #22c7a9;
+      }
+
+      .fadeIn {
+        animation-name: fadeIn;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeIn {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        50% {
+          transform: scale(0) rotate(180deg);
+        }
+        100% {
+          transform: scale(1) rotate(360deg);
+        }
+      }
     }
   }
 

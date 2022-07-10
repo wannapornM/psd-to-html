@@ -5,7 +5,8 @@
 .slideitem-home {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 3rem;
   background: black;
   padding: 10rem 3rem;
@@ -28,6 +29,11 @@
     }
   }
 
+  .home-btn {
+    width: fit-content;
+    padding: 12px 34px;
+  }
+
   .home-btn:hover {
     color: #f25630;
     border: 2px solid #f25630;
@@ -35,7 +41,7 @@
   }
 
   @media only screen and (min-width: 768px) {
-    justify-content: flex-start;
+    align-items: flex-start;
     gap: 4rem;
 
     &-text {

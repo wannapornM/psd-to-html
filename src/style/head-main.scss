@@ -23,7 +23,7 @@
   }
 
   &-container {
-    display: flex;
+    display: none;
     gap: 8px;
     position: relative;
     height: inherit;
@@ -118,13 +118,24 @@
     }
   }
 
+  @media only screen and (min-width: 768px) {
+    &-container {
+      display: flex;
+
+      .link-menus {
+        display: none;
+      }
+    }
+  }
+
   @media only screen and (min-width: 1200px) {
     padding: 1.425rem 8rem;
     z-index: 5;
 
-    &-menu,
-    &-other {
-      display: flex;
+    &-container {
+      .link-menus {
+        display: block;
+      }
     }
   }
 }
