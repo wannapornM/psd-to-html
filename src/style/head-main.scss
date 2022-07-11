@@ -23,14 +23,14 @@
   }
 
   &-container {
-    display: none;
-    gap: 8px;
+    display: flex;
     position: relative;
     height: inherit;
     align-items: center;
 
     .link-menus,
     .link-others {
+      display: none;
       height: 100%;
 
       img {
@@ -41,7 +41,6 @@
 
       li.link-menu,
       li.link-other {
-        padding: 0 14px;
         color: #60646d;
         font-weight: 500;
         height: 100%;
@@ -116,16 +115,29 @@
       left: 360px;
       visibility: hidden;
     }
+
+  }
+
+  button.hamburger {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    color: #60646d;
+    font-size: 24px;
+    background-color: transparent;
+    padding: 0;
   }
 
   @media only screen and (min-width: 768px) {
     &-container {
-      display: flex;
+      gap: 32px;
 
-      .link-menus {
-        display: none;
+      .link-others {
+        display: flex;
+        gap: 32px;
       }
     }
+
   }
 
   @media only screen and (min-width: 1200px) {
@@ -133,8 +145,19 @@
     z-index: 5;
 
     &-container {
+      gap: 32px;
+
       .link-menus {
-        display: block;
+        display: flex;
+        gap: 40px;
+      }
+
+      .link-others {
+        gap: 32px;
+      }
+
+      .hamburger {
+        display: none;
       }
     }
   }

@@ -4,6 +4,7 @@
 
 @import "./head-top.scss";
 @import "./head-main.scss";
+@import "./nav-hidden.scss";
 @import "./slideitem-home.scss";
 @import "./slideitem-aboutus.scss";
 @import "./slideitem-service.scss";
@@ -72,6 +73,7 @@ button {
 
 .main-app {
   overflow-x: hidden;
+  position: relative;
 }
 
 .head {
@@ -123,5 +125,9 @@ button {
   button {
     padding: 12px 36px;
     font-size: 14px;
+  }
+
+  .head {
+    padding: 1rem 4rem;
   }
 }

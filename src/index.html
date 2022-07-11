@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>psd-to-html</title>
     <link rel="stylesheet" href="./style/index.scss" />
+    <script
+      src="https://kit.fontawesome.com/9dc81811da.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
   </head>
 
@@ -180,9 +184,105 @@
               </a>
             </li>
           </ul>
+
+          <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
       </div>
+      <!-- .head-main -->
       <!-- Header -->
+
+      <div class="nav-hidden">
+        <div class="head-main-logobox">
+          <a href="">
+            <img
+              src="../assets/logohairly.png"
+              alt="Hairly logo"
+              laoding="lazy"
+            />
+            Hairly.
+          </a>
+        </div>
+
+        <ul class="navigation" id="navigation">
+          <li class="item active" onclick="toggleItem(this)">
+            <a href="#" class="main">Home</a>
+            <button class="expander">
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="sublists">
+              <li class="list"><a href="">Homepage 01</a></li>
+              <li class="list"><a href="">Homepage 02</a></li>
+              <li class="list"><a href="">Homepage 03</a></li>
+              <li class="list">
+                <a href="">Header Styles</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="item" onclick="toggleItem(this)">
+            <a href="#" class="main">About Us</a>
+            <button class="expander">
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="sublists">
+              <li class="list"><a href="">About</a></li>
+              <li class="list"><a href="">Team</a></li>
+              <li class="list"><a href="">Coming Soon</a></li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <a href="#" class="main">Services</a>
+            <button class="expander">
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="sublists">
+              <li class="list"><a href="">Services</a></li>
+              <li class="list"><a href="">Hair Treatment</a></li>
+              <li class="list"><a href="">Ladies Haircut</a></li>
+              <li class="list"><a href="">Beard Trim</a></li>
+              <li class="list"><a href="">Hair Color</a></li>
+              <li class="list"><a href="">Curly Hair</a></li>
+              <li class="list"><a href="">Hait State</a></li>
+              <li class="list"><a href="">Kid's Haircut</a></li>
+              <li class="list"><a href="">Men's Haircut</a></li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <a href="#" class="main">Blog</a>
+            <button class="expander">
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="sublists">
+              <li class="list"><a href="">Blog Grid View</a></li>
+              <li class="list"><a href="">Our Blog</a></li>
+              <li class="list"><a href="">Blog Single</a></li>
+              <li class="list"><a href="">Not Found</a></li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <a href="#" class="main">Shop</a
+            ><button class="expander">
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="sublists">
+              <li class="list"><a href="">Products</a></li>
+              <li class="list"><a href="">Product Details</a></li>
+              <li class="list"><a href="">Shoping Cart</a></li>
+              <li class="list"><a href="">Checkout</a></li>
+              <li class="list"><a href="">My Account</a></li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <a href="#" class="main">Contact</a>
+          </li>
+        </ul>
+      </div>
 
       <!-- Home section -->
       <div class="home-body">
