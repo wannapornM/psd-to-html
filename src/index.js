@@ -25,21 +25,20 @@ closeIcon.addEventListener("click", () => {
   navHiddenPanel.style.display = "none";
 });
 
-function toggleItem(item) {
-  console.log(item);
-  const subListElement = item.childNodes[5];
-  const btnExpander = item.childNodes[3];
-  const icon = btnExpander.childNodes[1];
+function toggleItem(btnExpander, listId, sublistId) {
+  const listElement = document.getElementById(listId);
+  const subListElement = document.getElementById(sublistId);
+  const angleDownIcon = btnExpander.childNodes[1];
 
-  if (item.classList.contains("dropdown")) {
-    item.setAttribute("class", "item");
+  if (listElement.classList.contains("dropdown")) {
+    listElement.setAttribute("class", "item");
     subListElement.setAttribute("class", "sublists");
     btnExpander.setAttribute("class", "expander");
-    icon.style.transform = "rotate(0deg)";
+    angleDownIcon.style.transform = "rotate(0deg)";
   } else {
-    item.setAttribute("class", "change-style-item dropdown");
+    listElement.setAttribute("class", "change-style-item dropdown");
     subListElement.setAttribute("class", "show-sublists");
     btnExpander.setAttribute("class", "btnToggle");
-    icon.style.transform = "rotate(180deg)";
+    angleDownIcon.style.transform = "rotate(180deg)";
   }
 }

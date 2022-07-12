@@ -210,12 +210,12 @@
         </div>
 
         <ul class="navigation" id="navigation">
-          <li class="item active" onclick="toggleItem(this)">
+          <li class="item active" id="list-home">
             <a href="#" class="main">Home</a>
-            <button class="expander">
+            <button class="expander" onclick="toggleItem(this, `list-home`, `sublist-home`)">
               <i class="fa-solid fa-angle-down"></i>
             </button>
-            <ul class="sublists">
+            <ul class="sublists" id="sublist-home">
               <li class="list"><a href="" class="submain">Homepage 01</a></li>
               <li class="list"><a href="" class="submain">Homepage 02</a></li>
               <li class="list"><a href="" class="submain">Homepage 03</a></li>
@@ -225,24 +225,24 @@
             </ul>
           </li>
 
-          <li class="item" onclick="toggleItem(this)">
+          <li class="item" id="list-about">
             <a href="#" class="main">About Us</a>
-            <button class="expander">
+            <button class="expander" onclick="toggleItem(this, `list-about`, `sublist-about`)">
               <i class="fa-solid fa-angle-down"></i>
             </button>
-            <ul class="sublists">
+            <ul class="sublists" id="sublist-about">
               <li class="list"><a href="" class="submain"></a>About</a></li>
               <li class="list"><a href="" class="submain"></a>Team</a></li>
               <li class="list"><a href="" class="submain"></a>Coming Soon</a></li>
             </ul>
           </li>
 
-          <li class="item" onclick="toggleItem(this)">
+          <li class="item" id="list-services">
             <a href="#" class="main">Services</a>
-            <button class="expander">
+            <button class="expander" onclick="toggleItem(this, `list-services`, `sublist-services`)">
               <i class="fa-solid fa-angle-down"></i>
             </button>
-            <ul class="sublists">
+            <ul class="sublists" id="sublist-services">
               <li class="list"><a href="" class="submain"></a>Services</a></li>
               <li class="list"><a href="" class="submain"></a>Hair Treatment</a></li>
               <li class="list"><a href="" class="submain"></a>Ladies Haircut</a></li>
@@ -255,12 +255,12 @@
             </ul>
           </li>
 
-          <li class="item" onclick="toggleItem(this)">
+          <li class="item" id="list-blog">
             <a href="#" class="main">Blog</a>
-            <button class="expander">
+            <button class="expander" onclick="toggleItem(this, `list-blog`, `sublist-blog`)">
               <i class="fa-solid fa-angle-down"></i>
             </button>
-            <ul class="sublists">
+            <ul class="sublists" id="sublist-blog">
               <li class="list"><a href="" class="submain"></a>Blog Grid View</a></li>
               <li class="list"><a href="" class="submain"></a>Our Blog</a></li>
               <li class="list"><a href="" class="submain"></a>Blog Single</a></li>
@@ -268,12 +268,12 @@
             </ul>
           </li>
 
-          <li class="item" onclick="toggleItem(this)">
+          <li class="item" id="list-shop">
             <a href="#" class="main">Shop</a>
-            <button class="expander">
+            <button class="expander" onclick="toggleItem(this, `list-shop`, `sublist-shop`)">
               <i class="fa-solid fa-angle-down"></i>
             </button>
-            <ul class="sublists">
+            <ul class="sublists" id="sublist-shop">
               <li class="list"><a href="" class="submain"></a>Products</a></li>
               <li class="list"><a href="" class="submain"></a>Product Details</a></li>
               <li class="list"><a href="" class="submain"></a>Shoping Cart</a></li>

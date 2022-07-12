@@ -1,66 +1,58 @@
 .nav-hidden {
-  width: 323px;
+  display: none;
+  width: 320px;
   height: 100vh;
   position: absolute;
   top: 0;
   right: 0;
   background-color: white;
   color: #1b212f;
-  font-size: 16px;
   border-left: 3px solid #f25630;
+  font-size: 16px;
+  font-weight: 500;
   overflow-y: scroll;
   z-index: 10;
-
-  .head-main-logobox { padding: 24px 20px; }
-
-  li.item {
-    display: block;
-    border-top: 1px solid #e5e5e5;
-    position: relative;
-    transition: all 200ms;
-
-    a.main {
-      display: inline-block;
-      padding: 10px 20px;
-    }
-  }
-
-  .change-style-item {
-    display: block;
-    position: relative;
-    border-top: 1px solid #d44c2a;
-    transition: all 1s;
-
-    a.main {
-      display: inline-block;
-      padding: 10px 20px;
-    }
-  } 
-    
-  .active {
-    background-color: #f25630;
-    border-top: 1px solid #d44c2a;
-    color: white;
-    
-    button.expander {
-      color: white;
-      border: 1px solid white;
-    }
-  }
 }
 
-li.list:hover, li.item:hover {
-  background-color: #f25630;
-  color: white;
-  border-top: 1px solid #d44c2a;
+button.hidden-close-icon {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  display: flex;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  color: #1b212f;
+  background-color: transparent;
+  font-size: 32px;
+  transition: color 200ms;
+}
+button.hidden-close-icon:hover { color: #f25630; }
+  
+.head-main-logobox { padding: 24px 20px; }
 
+li.item {
+  position: relative;
+  display: block;
+  border-top: 1px solid #e5e5e5;
+  transition: all 200ms;
+}
+li.item:last-child { border-bottom: 1px solid #e5e5e5; }
+
+.active {
+  background-color: #f25630;
+  border-top: 1px solid #d44c2a;
+  color: white;
+  
   button.expander {
     color: white;
     border: 1px solid white;
   }
 }
-li.list:hover a.submain {
-  color: white;
+
+a.main {
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 ul.sublists { display: none; }
@@ -72,61 +64,41 @@ li.list {
   border-top: 1px solid #e5e5e5;
   color: black;
   transition: all 200ms;
-
-  a.submain {
-    color: #1b212f;
-  }
 }
 
-.show-sublists { display: block; }
+a.submain {
+  color: #1b212f;
+}
 
-.dropdown {
+li.item:hover, li.list:hover {
+  border-top: 1px solid #d44c2a;
   background-color: #f25630;
   color: white;
-}
 
-.hidden-close-icon {
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  display: flex;
-  border: 0;
-  padding: 0;
-  border-radius: 0;
-  color: #1b212f;
-  background-color: transparent;
-  font-size: 32px;
-  transition: color 200ms;
+  button.expander {
+    color: white;
+    border: 1px solid white;
+  }
 }
-.hidden-close-icon:hover {
-  color: #f25630;
-}
-
-.expander {
-  position: absolute;
-  top: 10px;
-  right: 22px;
-  background-color: transparent;
-  color: #7f7f7f;
-  font-size: 16px;
-  border: 1px solid #7f7f7f;
-  padding: 0 6px;
-  border-radius: 0;
-}
-.btnToggle {
-  position: absolute;
-  top: 10px;
-  right: 22px;
-  background-color: transparent;
-  font-size: 16px;
-  padding: 0 6px;
-  border-radius: 0;
-  border: 1px solid white;
+li.list:hover a.submain {
   color: white;
+}
+
+button.expander {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  background-color: transparent;
+  color: #1b212f;
+  font-size: 16px;
+  border: 1px solid #1b212f;
+  padding: 0 6px;
+  border-radius: 0;
 }
 
 .informations {
   margin: 40px 20px;
+  font-weight: 400;
 
   .info:nth-child(1) { margin-bottom: 14px; }
 
@@ -147,7 +119,7 @@ li.list {
 .socials {
   display: flex;
   gap: 10px;
-  padding: 0 20px;
+  padding: 0 20px 12px;
 }
 .social {
   display: inline-block;
@@ -159,9 +131,41 @@ li.list {
   background-size: 44%;
   background-position-x: center;
   background-position-y: center;
+  transition: background-color 200ms;
+}
+.social:hover {
+  background-color: #1b212f;
 }
 .social:nth-child(1) { background-image: url("../../assets/facebook.png"); }
 .social:nth-child(2) { background-image: url("../../assets/instagram.png"); }
 .social:nth-child(3) { background-image: url("../../assets/linkedin.png"); }
 .social:nth-child(4) { background-image: url("../../assets/twitter.png"); }
 
+
+// After triggered by user
+
+.change-style-item {
+  display: block;
+  position: relative;
+  border-top: 1px solid #d44c2a;
+  transition: all 1s;
+} 
+
+.dropdown {
+  background-color: #f25630;
+  color: white;
+}
+
+.show-sublists { display: block; }
+
+.btnToggle {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 0 6px;
+  border-radius: 0;
+  border: 1px solid white;
+  color: white;
+}
