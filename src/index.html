@@ -15,7 +15,7 @@
 
   <body>
     <!-- <div id="app"> -->
-    <div class="main-app">
+    <div class="main-app" id="main-app">
       <div class="headtop-body">
         <div class="head head-top">
           <div class="head-top-promotion">
@@ -193,7 +193,11 @@
       <!-- .head-main -->
       <!-- Header -->
 
-      <div class="nav-hidden">
+      <div class="nav-hidden" id="nav-hidden">
+        <button class="hidden-close-icon" id="hidden-close-icon">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </button>
+
         <div class="head-main-logobox">
           <a href="">
             <img
@@ -212,11 +216,11 @@
               <i class="fa-solid fa-angle-down"></i>
             </button>
             <ul class="sublists">
-              <li class="list"><a href="">Homepage 01</a></li>
-              <li class="list"><a href="">Homepage 02</a></li>
-              <li class="list"><a href="">Homepage 03</a></li>
+              <li class="list"><a href="" class="submain">Homepage 01</a></li>
+              <li class="list"><a href="" class="submain">Homepage 02</a></li>
+              <li class="list"><a href="" class="submain">Homepage 03</a></li>
               <li class="list">
-                <a href="">Header Styles</a>
+                <a href="" class="submain">Header Styles</a>
               </li>
             </ul>
           </li>
@@ -227,60 +231,78 @@
               <i class="fa-solid fa-angle-down"></i>
             </button>
             <ul class="sublists">
-              <li class="list"><a href="">About</a></li>
-              <li class="list"><a href="">Team</a></li>
-              <li class="list"><a href="">Coming Soon</a></li>
+              <li class="list"><a href="" class="submain"></a>About</a></li>
+              <li class="list"><a href="" class="submain"></a>Team</a></li>
+              <li class="list"><a href="" class="submain"></a>Coming Soon</a></li>
             </ul>
           </li>
 
-          <li class="item">
+          <li class="item" onclick="toggleItem(this)">
             <a href="#" class="main">Services</a>
             <button class="expander">
               <i class="fa-solid fa-angle-down"></i>
             </button>
             <ul class="sublists">
-              <li class="list"><a href="">Services</a></li>
-              <li class="list"><a href="">Hair Treatment</a></li>
-              <li class="list"><a href="">Ladies Haircut</a></li>
-              <li class="list"><a href="">Beard Trim</a></li>
-              <li class="list"><a href="">Hair Color</a></li>
-              <li class="list"><a href="">Curly Hair</a></li>
-              <li class="list"><a href="">Hait State</a></li>
-              <li class="list"><a href="">Kid's Haircut</a></li>
-              <li class="list"><a href="">Men's Haircut</a></li>
+              <li class="list"><a href="" class="submain"></a>Services</a></li>
+              <li class="list"><a href="" class="submain"></a>Hair Treatment</a></li>
+              <li class="list"><a href="" class="submain"></a>Ladies Haircut</a></li>
+              <li class="list"><a href="" class="submain"></a>Beard Trim</a></li>
+              <li class="list"><a href="" class="submain"></a>Hair Color</a></li>
+              <li class="list"><a href="" class="submain"></a>Curly Hair</a></li>
+              <li class="list"><a href="" class="submain"></a>Hait State</a></li>
+              <li class="list"><a href="" class="submain"></a>Kid's Haircut</a></li>
+              <li class="list"><a href="" class="submain"></a>Men's Haircut</a></li>
             </ul>
           </li>
 
-          <li class="item">
+          <li class="item" onclick="toggleItem(this)">
             <a href="#" class="main">Blog</a>
             <button class="expander">
               <i class="fa-solid fa-angle-down"></i>
             </button>
             <ul class="sublists">
-              <li class="list"><a href="">Blog Grid View</a></li>
-              <li class="list"><a href="">Our Blog</a></li>
-              <li class="list"><a href="">Blog Single</a></li>
-              <li class="list"><a href="">Not Found</a></li>
+              <li class="list"><a href="" class="submain"></a>Blog Grid View</a></li>
+              <li class="list"><a href="" class="submain"></a>Our Blog</a></li>
+              <li class="list"><a href="" class="submain"></a>Blog Single</a></li>
+              <li class="list"><a href="" class="submain"></a>Not Found</a></li>
             </ul>
           </li>
 
-          <li class="item">
-            <a href="#" class="main">Shop</a
-            ><button class="expander">
+          <li class="item" onclick="toggleItem(this)">
+            <a href="#" class="main">Shop</a>
+            <button class="expander">
               <i class="fa-solid fa-angle-down"></i>
             </button>
             <ul class="sublists">
-              <li class="list"><a href="">Products</a></li>
-              <li class="list"><a href="">Product Details</a></li>
-              <li class="list"><a href="">Shoping Cart</a></li>
-              <li class="list"><a href="">Checkout</a></li>
-              <li class="list"><a href="">My Account</a></li>
+              <li class="list"><a href="" class="submain"></a>Products</a></li>
+              <li class="list"><a href="" class="submain"></a>Product Details</a></li>
+              <li class="list"><a href="" class="submain"></a>Shoping Cart</a></li>
+              <li class="list"><a href="" class="submain"></a>Checkout</a></li>
+              <li class="list"><a href="" class="submain"></a>My Account</a></li>
             </ul>
           </li>
 
           <li class="item">
             <a href="#" class="main">Contact</a>
           </li>
+        </ul>
+
+        <div class="informations">
+          <div class="info">
+            <i class="fa-solid fa-phone-volume pad-color oblique"></i>
+            +00-818-726-7400
+          </div>
+          <div class="info">
+            <i class="fa-regular fa-envelope pad-color"></i>
+            hairly.colors@mail.com
+          </div>
+        </div>
+
+        <ul class="socials">
+          <li class="social"><a href=""></a></li>
+          <li class="social"><a href=""></a></li>
+          <li class="social"><a href=""></a></li>
+          <li class="social"><a href=""></a></li>
         </ul>
       </div>
 

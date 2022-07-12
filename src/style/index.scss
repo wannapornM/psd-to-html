@@ -82,6 +82,11 @@ button {
   margin: 0 auto;
 }
 
+.fix-screen {
+  position: fixed;
+  overflow-y: hidden;
+}
+
 @media only screen and (min-width: 667px) {
   section {
     padding: 4rem 2rem;
