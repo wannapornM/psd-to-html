@@ -60,7 +60,7 @@
       </div>
       <!-- .head-top -->
 
-      <div class="head head-main">
+      <div class="head head-main" id="head-main">
         <div class="head-main-logobox">
           <a href="">
             <img
@@ -304,7 +304,111 @@
           <li class="social"><a href=""></a></li>
           <li class="social"><a href=""></a></li>
         </ul>
+      </div>  <!-- Hidden navigation -->
+    
+      <div class="sticky-head" id="sticky-head">
+        <div class="sticky-head-logobox">
+          <a href="">
+            <img
+              src="../assets/logohairly.png"
+              alt="Hairly logo"
+              laoding="lazy"
+            />
+            Hairly.
+          </a>
+        </div>
+
+        <div class="sticky-head-container">
+          <ul class="main-menus">
+            <li
+              class="menu"
+              id="sticky-home"
+              onmouseover="showDropdown(this)"
+              onmouseleave="hideDropdown(this)"
+            >
+              <a href="" id="active" title="Home">Home</a>
+              <ul class="hidden-menus" id="home-hidden-menus">
+                <li class="hidden-menu"><a href="">Homepage 01</a></li>
+                <li class="hidden-menu"><a href="">Homepage 02</a></li>
+                <li class="hidden-menu"><a href="">Homepage 03</a></li>
+                <li class="hidden-menu"><a href="">Header Styles</a></li>
+              </ul>
+            </li>
+              
+            <li
+              class="menu"
+              id="sticky-about"
+              onmouseover="showDropdown(this)"
+              onmouseleave="hideDropdown(this)"
+            >
+              <a href="" class="underline-from-left" title="About us">About Us</a>
+              <ul class="hidden-menus" id="about-hidden-menus">
+                <li class="hidden-menu"><a href="">About</a></li>
+                <li class="hidden-menu"><a href="">Team</a></li>
+                <li class="hidden-menu"><a href="">Coming Soon</a></li>
+              </ul>
+            </li>
+              
+            <li
+              class="menu"
+              id="sticky-service"
+              onmouseover="showDropdown(this)"
+              onmouseleave="hideDropdown(this)"
+            >
+              <a href="" class="underline-from-left" title="Services">Services</a>
+              <ul class="hidden-menus" id="service-hidden-menus">
+                <li class="hidden-menu"><a href="">Services</a></li>
+                <li class="hidden-menu"><a href="">Hair Treatment</a></li>
+                <li class="hidden-menu"><a href="">Ladies Haircut</a></li>
+                <li class="hidden-menu"><a href="">Beard Trim</a></li>
+                <li class="hidden-menu"><a href="">Hair Color</a></li>
+                <li class="hidden-menu"><a href="">Curly Hair</a></li>
+                <li class="hidden-menu"><a href="">Hair State</a></li>
+                <li class="hidden-menu"><a href="">Kid's Haircut</a></li>
+                <li class="hidden-menu"><a href="">Men's Haircut</a></li>
+              </ul>
+            </li>
+              
+            <li
+              class="menu"
+              id="sticky-blog"
+              onmouseover="showDropdown(this)"
+              onmouseleave="hideDropdown(this)"
+            >
+              <a href="" class="underline-from-left" title="Blog">Blog</a>
+              <ul class="hidden-menus" id="blog-hidden-menus">
+                <li class="hidden-menu"><a href="">Blog Grid View</a></li>
+                <li class="hidden-menu"><a href="">Our Blog</a></li>
+                <li class="hidden-menu"><a href="">Blog Single</a></li>
+                <li class="hidden-menu"><a href="">Not Found</a></li>
+              </ul>
+            </li>
+            
+            <li
+              class="menu"
+              id="sticky-shop"
+              onmouseover="showDropdown(this)"
+              onmouseleave="hideDropdown(this)"
+            >
+              <a href="" class="underline-from-left" title="Shop">Shop</a>
+              <ul class="hidden-menus" id="shop-hidden-menus">
+                <li class="hidden-menu"><a href="">Product</a></li>
+                <li class="hidden-menu"><a href="">Product Details</a></li>
+                <li class="hidden-menu"><a href="">Shopping Cart</a></li>
+                <li class="hidden-menu"><a href="">Checkout</a></li>
+                <li class="hidden-menu"><a href="">My account</a></li>
+              </ul>
+            </li>
+          
+            <li class="menu">
+              <a href="" class="underline-from-left" title="Contact">Contact</a>
+            </li>
+          </ul>
+
+          <button class="btn-sticky">CONTACT US</button>
+        </div>
       </div>
+      <!-- .sticky-head-->
 
       <!-- Home section -->
       <div class="home-body">

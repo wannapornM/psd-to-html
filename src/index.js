@@ -1,13 +1,26 @@
 // .head-main
-function showDropdown(element) {
-  child = document.getElementById(element.id).childNodes[3];
-  child.style.visibility = "visible";
+function showDropdown(menu) {
+  menu.classList.add("hrv-orange-text");
+  hiddenMenu = document.getElementById(menu.id).childNodes[3];
+  hiddenMenu.style.visibility = "visible";
 }
 
-function hideDropdown(element) {
-  child = document.getElementById(element.id).childNodes[3];
-  child.style.visibility = "hidden";
+function hideDropdown(menu) {
+  menu.classList.remove("hrv-orange-text");
+  hiddenMenu = document.getElementById(menu.id).childNodes[3];
+  hiddenMenu.style.visibility = "hidden";
 }
+
+// .stickt-head
+const stickyHeader = document.getElementById("sticky-head");
+
+window.onscroll = function () {
+  if (window.pageYOffset > 160) {
+    stickyHeader.style.visibility = "visible";
+  } else {
+    stickyHeader.style.visibility = "hidden";
+  }
+};
 
 // .nav-hidden
 const mainApp = document.getElementById("main-app");
