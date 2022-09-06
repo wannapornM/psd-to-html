@@ -6,6 +6,7 @@
   background-color: white;
   top: 0;
   opacity: 0;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   transition: opacity 250ms ease;
 
   &-container {
@@ -58,6 +59,11 @@
 
         a#active {
           color: #f25630;
+        }
+        a#active:after {
+          content: "";
+          display: block;
+          width: 90%;
           border-bottom: 3px dashed #db8d83;
         }
 
@@ -81,7 +87,7 @@
 
       .hidden-menus {
         position: absolute;
-        top: 74px;
+        top: 50px;
         width: 220px;
         visibility: hidden;
         border-radius: 10px;

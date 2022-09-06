@@ -52,21 +52,25 @@
       a {
         display: inline-block;
       }
-      a#active {
+      a#active:after {
+        content: "";
+        display: block;
+        width: 90%;
         border-bottom: 3px dashed #db8d83;
       }
-      a.menu:after {
-        display: block;
+
+      .underline-from-left:after {
         content: "";
+        display: block;
+        width: 60%;
         border-bottom: 3px dashed #db8d83;
+        transform-origin: top left;
         transform: scaleX(0);
         transition: transform 350ms ease-in-out;
       }
-      a:hover:after {
+
+      .link-menu:hover a:after {
         transform: scaleX(1);
-      }
-      a.menu:after {
-        transform-origin: 0% 50%;
       }
     }
 
