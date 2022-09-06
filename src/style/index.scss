@@ -18,8 +18,13 @@
 @import "./slideitem-footer.scss";
 @import "./sticky-head.scss";
 
+html {
+  background-color: #db8d83;
+}
+
 body {
   font-size: 16px;
+  background-color: #fff;
 }
 
 h1 {
