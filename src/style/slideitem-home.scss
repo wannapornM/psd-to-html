@@ -1,15 +1,19 @@
 .home-body {
-  background: black;
+  background-image: url("http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/image-1-1.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.7s ease-in-out;
 }
 
 .slideitem-home {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  background: black;
   padding: 10rem 3rem;
+  background-color: transparent;
 
   &-text {
     width: 80%;
@@ -40,6 +44,28 @@
     background: transparent;
   }
 
+  .dot-steps-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    left: 42%;
+    bottom: 1.5rem;
+
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .active {
+      background-color: #f25630;
+    }
+  }
+
   @media only screen and (min-width: 768px) {
     align-items: flex-start;
     gap: 4rem;
@@ -55,6 +81,10 @@
       p {
         width: 70%;
       }
+    }
+
+    .dot-steps-group {
+      left: 46%;
     }
   }
 
