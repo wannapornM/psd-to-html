@@ -12,13 +12,13 @@ function hideDropdown(menu) {
 }
 
 // .stickt-head
-const stickyHeader = document.getElementById("sticky-head");
+const stickyHeadBar = document.getElementById("sticky-bar");
 
 window.onscroll = function () {
   if (window.pageYOffset > 160) {
-    stickyHeader.style.visibility = "visible";
+    stickyHeadBar.classList.add("show-sticky");
   } else {
-    stickyHeader.style.visibility = "hidden";
+    stickyHeadBar.classList.remove("show-sticky");
   }
 };
 
@@ -54,4 +54,37 @@ function toggleItem(btnExpander, listId, sublistId) {
     btnExpander.setAttribute("class", "btnToggle");
     angleDownIcon.style.transform = "rotate(180deg)";
   }
+}
+
+// Home section
+imgUrl = [
+  "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/image-1-1.jpg",
+  "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/8-1.jpg",
+  "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/001.jpg",
+];
+
+const dots = document.querySelectorAll(".dot");
+const sectionHome = document.querySelector(".home-body");
+
+let indx = 1;
+
+setInterval(sliderImages, 3000);
+
+function sliderImages() {
+  if (indx > imgUrl.length - 1) {
+    indx = 0;
+  }
+
+  sectionHome.style.backgroundImage = `url(${imgUrl[indx]})`;
+
+  removeBackgroundDotSteps();
+  dots[indx].classList.add("active");
+
+  indx++;
+}
+
+function removeBackgroundDotSteps() {
+  dots.forEach((dot) => {
+    dot.classList.remove("active");
+  });
 }
