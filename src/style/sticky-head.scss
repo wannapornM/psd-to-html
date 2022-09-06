@@ -24,8 +24,9 @@
       font-weight: 600;
 
       a {
-        align-items: center;
         display: flex;
+        align-items: center;
+        flex-shrink: 0;
 
         img {
           width: 50px;
