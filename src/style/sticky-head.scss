@@ -24,8 +24,9 @@
       font-weight: 600;
 
       a {
-        align-items: center;
         display: flex;
+        align-items: center;
+        flex-shrink: 0;
 
         img {
           width: 50px;
@@ -45,7 +46,7 @@
       font-weight: 500;
 
       .main-menus {
-        display: flex;
+        display: none;
         align-items: center;
         height: 100%;
         position: relative;
@@ -131,6 +132,16 @@
       .btn-sticky:hover {
         background-color: #ffffff;
         color: #f25630;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    &-container {
+      &-menus {
+        .main-menus {
+          display: flex;
+        }
       }
     }
   }
