@@ -57,7 +57,7 @@ function toggleItem(btnExpander, listId, sublistId) {
 }
 
 // Home section
-imgUrl = [
+const imgUrl = [
   "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/image-1-1.jpg",
   "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/8-1.jpg",
   "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/001.jpg",
