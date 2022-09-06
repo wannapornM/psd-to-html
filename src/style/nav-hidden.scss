@@ -27,9 +27,9 @@ button.hidden-close-icon {
   font-size: 32px;
   transition: color 200ms;
 }
-button.hidden-close-icon:hover { color: #f25630; }
-  
-.head-main-logobox { padding: 24px 20px; }
+button.hidden-close-icon:hover {
+  color: #f25630;
+}
 
 li.item {
   position: relative;
@@ -37,13 +37,15 @@ li.item {
   border-top: 1px solid #e5e5e5;
   transition: all 200ms;
 }
-li.item:last-child { border-bottom: 1px solid #e5e5e5; }
+li.item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
 
 .active {
   background-color: #f25630;
   border-top: 1px solid #d44c2a;
   color: white;
-  
+
   button.expander {
     color: white;
     border: 1px solid white;
@@ -55,7 +57,9 @@ a.main {
   padding: 10px 20px;
 }
 
-ul.sublists { display: none; }
+ul.sublists {
+  display: none;
+}
 
 li.list {
   display: block;
@@ -70,7 +74,8 @@ a.submain {
   color: #1b212f;
 }
 
-li.item:hover, li.list:hover {
+li.item:hover,
+li.list:hover {
   border-top: 1px solid #d44c2a;
   background-color: #f25630;
   color: white;
@@ -100,9 +105,13 @@ button.expander {
   margin: 40px 20px;
   font-weight: 400;
 
-  .info:nth-child(1) { margin-bottom: 14px; }
+  .info:nth-child(1) {
+    margin-bottom: 14px;
+  }
 
-  .info { transition: all 200ms; }
+  .info {
+    transition: all 200ms;
+  }
   .info:hover {
     color: #f25630;
     text-decoration-line: underline;
@@ -112,8 +121,10 @@ button.expander {
     padding-right: 6px;
     color: #f25630;
   }
-  
-  .oblique { transform: rotate(-45deg) translateY(-4px); }
+
+  .oblique {
+    transform: rotate(-45deg) translateY(-4px);
+  }
 }
 
 .socials {
@@ -136,11 +147,18 @@ button.expander {
 .social:hover {
   background-color: #1b212f;
 }
-.social:nth-child(1) { background-image: url("../../assets/facebook.png"); }
-.social:nth-child(2) { background-image: url("../../assets/instagram.png"); }
-.social:nth-child(3) { background-image: url("../../assets/linkedin.png"); }
-.social:nth-child(4) { background-image: url("../../assets/twitter.png"); }
-
+.social:nth-child(1) {
+  background-image: url("../../assets/facebook.png");
+}
+.social:nth-child(2) {
+  background-image: url("../../assets/instagram.png");
+}
+.social:nth-child(3) {
+  background-image: url("../../assets/linkedin.png");
+}
+.social:nth-child(4) {
+  background-image: url("../../assets/twitter.png");
+}
 
 // After triggered by user
 
@@ -149,14 +167,16 @@ button.expander {
   position: relative;
   border-top: 1px solid #d44c2a;
   transition: all 1s;
-} 
+}
 
 .dropdown {
   background-color: #f25630;
   color: white;
 }
 
-.show-sublists { display: block; }
+.show-sublists {
+  display: block;
+}
 
 .btnToggle {
   position: absolute;

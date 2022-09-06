@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background: white;
-  
+
   &-logobox {
     font-size: 36px;
     font-weight: 600;
@@ -113,7 +113,6 @@
       left: 360px;
       visibility: hidden;
     }
-
   }
 
   button.hamburger {
@@ -140,6 +139,10 @@
   @media only screen and (min-width: 1200px) {
     padding: 1.425rem 8rem;
     z-index: 5;
+
+    &-logobox {
+      padding: 0;
+    }
 
     &-container {
       gap: 32px;

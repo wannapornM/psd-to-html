@@ -12,13 +12,13 @@ function hideDropdown(menu) {
 }
 
 // .stickt-head
-const stickyHeader = document.getElementById("sticky-head");
+const stickyHeadBar = document.getElementById("sticky-bar");
 
 window.onscroll = function () {
   if (window.pageYOffset > 160) {
-    stickyHeader.style.visibility = "visible";
+    stickyHeadBar.classList.add("show-sticky");
   } else {
-    stickyHeader.style.visibility = "hidden";
+    stickyHeadBar.classList.remove("show-sticky");
   }
 };
 
