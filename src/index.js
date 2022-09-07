@@ -1,3 +1,7 @@
+import img1 from "../assets/image1.jpeg";
+import img2 from "../assets/image2.jpeg";
+import img3 from "../assets/image3.jpeg";
+
 // .head-main
 function showDropdown(menu) {
   menu.classList.add("hrv-orange-text");
@@ -57,12 +61,8 @@ function toggleItem(btnExpander, listId, sublistId) {
 }
 
 // Home section
-const imgUrl = [
-  "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/image-1-1.jpg",
-  "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/8-1.jpg",
-  "http://wp1.efforttech.com/newwp/hairly/wp-content/uploads/2022/04/001.jpg",
-];
 
+const imgUrl = [img1, img2, img3];
 const dots = document.querySelectorAll(".dot");
 const sectionHome = document.querySelector(".home-body");
 
