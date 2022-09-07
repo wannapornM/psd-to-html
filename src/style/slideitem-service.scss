@@ -134,23 +134,6 @@
         background-image: url("../../assets/hair-state-white.png");
         background-color: #22c7a9;
       }
-
-      .fadeIn {
-        animation-name: fadeIn;
-        animation-duration: 0.6s;
-        animation-fill-mode: forwards;
-      }
-      @keyframes fadeIn {
-        0% {
-          transform: scale(1) rotate(0deg);
-        }
-        50% {
-          transform: scale(0) rotate(180deg);
-        }
-        100% {
-          transform: scale(1) rotate(360deg);
-        }
-      }
     }
   }
 
